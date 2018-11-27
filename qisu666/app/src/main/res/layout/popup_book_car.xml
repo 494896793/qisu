@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/default_padding_lnr"
+        android:paddingRight="@dimen/default_padding_lnr">
+
+
+        <TextView
+            style="@style/TextView_Normal_Black"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="代驾" />
+
+        <TextView
+            style="@style/TextView_Normal_Dark_Gray_MarginLeft"
+            android:text="代驾费用:" />
+
+        <TextView
+            style="@style/TextView_Normal_Dark_Gray"
+            android:text="80元"
+            android:textColor="@color/text_red" />
+
+    </LinearLayout>
+
+    <View style="@style/Divide_Horizontal_Full" />
+
+    <RelativeLayout
+        android:id="@+id/layout_portrait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/default_margin_tnb"
+        android:paddingLeft="@dimen/default_margin_lnr"
+        android:paddingRight="@dimen/default_margin_lnr"
+        android:paddingTop="@dimen/default_margin_tnb">
+
+        <com.de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_car_driver_test"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_personal_info_portrait" />
+
+        <LinearLayout
+            android:id="@+id/ll_car_driver_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/img_car_driver_test"
+            android:layout_toRightOf="@+id/img_car_driver_test"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/default_padding_lnr">
+
+            <TextView
+                android:id="@+id/img_car_driver_name"
+                style="@style/TextView_Normal_Black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/personal_portrait" />
+
+            <ImageView
+                android:id="@+id/iv_collection"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_collection_yellow" />
+
+            <TextView
+                style="@style/TextView_Normal_Black"
+                android:layout_marginLeft="5dp"
+                android:text="@string/personal_portrait" />
+
+            <TextView
+                style="@style/TextView_Normal_Black"
+                android:layout_marginLeft="30dp"
+                android:text="@string/personal_portrait" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_car_driver_top"
+            android:layout_marginTop="@dimen/default_padding_tnb"
+            android:layout_toEndOf="@+id/img_car_driver_test"
+            android:layout_toRightOf="@+id/img_car_driver_test"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/default_padding_lnr">
+
+            <TextView
+                style="@style/TextView_Normal_Black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/personal_portrait" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_collection_yellow" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View style="@style/Divide_Horizontal_Full" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/default_padding_lnr"
+        android:paddingRight="@dimen/default_padding_lnr">
+
+
+        <TextView
+            style="@style/TextView_Normal_Black"
+            android:text="预约中" />
+
+        <View
+            style="@style/Divide_Vertical_Full"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            style="@style/TextView_Normal_Dark_Gray_MarginLeft"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="广东省广州市" />
+
+        <TextView
+            style="@style/TextView_Normal_Dark_Gray"
+            android:text="广东省广州市" />
+
+    </LinearLayout>
+
+    <View style="@style/Divide_Horizontal_Full" />
+
+    <include layout="@layout/car_item_view" />
+
+    <View style="@style/Divide_Horizontal_Full" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:id="@+id/ll_index_scan"
+            style="@style/LL_Main_Index_Item">
+
+            <ImageView
+                style="@style/Iv_Car_Share_Item"
+                android:src="@mipmap/cs_car_cancel" />
+
+            <TextView
+                style="@style/Text_Car_Share_Item"
+                android:text="@string/car_share_cancel_book" />
+        </LinearLayout>
+
+        <View style="@style/Divide_Vertical_Full" />
+
+        <LinearLayout
+            android:id="@+id/ll_index_share_car"
+            style="@style/LL_Main_Index_Item">
+
+            <ImageView
+                style="@style/Iv_Car_Share_Item"
+                android:src="@mipmap/cs_car_get" />
+
+            <TextView
+                style="@style/Text_Car_Share_Item"
+                android:text="@string/car_share_get_car" />
+        </LinearLayout>
+
+        <View style="@style/Divide_Vertical_Full" />
+
+        <LinearLayout
+            android:id="@+id/ll_index_near_car"
+            style="@style/LL_Main_Index_Item">
+
+            <ImageView
+                style="@style/Iv_Car_Share_Item"
+                android:src="@mipmap/cs_car_bee" />
+
+            <TextView
+                style="@style/Text_Car_Share_Item"
+                android:text="@string/car_share_bee" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <LinearLayout style="@style/LL_Main_Index_Item">
+
+            <ImageView
+                style="@style/Iv_Car_Share_Item"
+                android:src="@mipmap/cs_car_bee" />
+
+            <TextView
+                style="@style/Text_Car_Share_Item"
+                android:text="@string/car_share_bee" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/LL_Main_Index_Item">
+
+            <ImageView
+                style="@style/Iv_Car_Share_Item"
+                android:src="@mipmap/cs_car_open" />
+
+            <TextView
+                style="@style/Text_Car_Share_Item"
+                android:text="@string/car_share_open" />
+        </LinearLayout>
+
+        <View style="@style/Divide_Vertical_Full" />
+
+        <LinearLayout style="@style/LL_Main_Index_Item">
+
+            <ImageView
+                style="@style/Iv_Car_Share_Item"
+                android:src="@mipmap/cs_car_lock" />
+
+            <TextView
+                style="@style/Text_Car_Share_Item"
+                android:text="@string/car_share_lock" />
+        </LinearLayout>
+
+        <View style="@style/Divide_Vertical_Full" />
+
+        <LinearLayout style="@style/LL_Main_Index_Item">
+
+            <ImageView
+                style="@style/Iv_Car_Share_Item"
+                android:src="@mipmap/cs_car_return" />
+
+            <TextView
+                style="@style/Text_Car_Share_Item"
+                android:text="@string/car_share_return" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/Divide_Horizontal_Full" />
+
+</LinearLayout>

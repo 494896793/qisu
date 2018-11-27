@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp" />
+
+    <LinearLayout
+        android:background="@color/content_bg"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:orientation="vertical"
+        android:padding="@dimen/default_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_charge"
+                style="@style/TextView_Subtitle_Black"
+                android:text="+10.00"
+                android:textSize="18sp" />
+
+            <TextView
+                android:textSize="14sp"
+                android:id="@+id/tv_charge_gift"
+                style="@style/TextView_Subtitle_Black_Weight" />
+
+            <TextView
+                android:id="@+id/tv_from"
+                style="@style/TextView_Subtitle_Black"
+                android:text="微信充值"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_tnb"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView_Subtitle_Black"
+                android:text="@string/bill_balance"
+                android:textColor="@color/text_gray"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_balance"
+                style="@style/TextView_Subtitle_Black_Weight"
+                android:text="10.00"
+                android:textColor="@color/text_gray"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/TextView_Subtitle_Gray"
+                android:text="2016-05-28 14:21:23"
+                android:textColor="@color/text_gray"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

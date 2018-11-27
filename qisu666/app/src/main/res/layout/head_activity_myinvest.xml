@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/bg_white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/myinvest_total_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投资累计收益(元)"
+                android:textColor="@color/text_black"
+                />
+
+            <TextView
+                android:id="@+id/myinvest_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="0.00"
+                android:textColor="@color/bg_dark_primary"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/bianxian"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投资中(份)"
+                android:textColor="@color/text_black"
+                />
+
+            <TextView
+                android:id="@+id/myinvest_total_fen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bg_dark_primary"
+                android:text="0"
+                android:paddingTop="5dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bianxian"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="投资日程"
+        android:textSize="22dp"
+        android:layout_marginLeft="25dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/text_black"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bianxian"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/myinvest_month"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="当月分红已到账0元"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/text_black"
+            android:layout_gravity="center"
+            />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/myinvest_month_img"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/gengduo1"
+            android:paddingRight="15dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/myinvest_month_no"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="当月分红待到账0元。"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/text_black"
+            android:layout_gravity="center"
+            />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/myinvest_month_img_no"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/gengduo1"
+            android:paddingRight="15dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <!--日历控件  没有添加顶部-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+            <TextView
+                android:clickable="true"
+                android:id="@+id/tv_pre"
+                android:textColor="#4586ED"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:text="7月"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/tv_month"
+                android:textColor="@color/text_black"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:text="2016年8月"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:clickable="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/tv_next"
+                android:textColor="#4586ED"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:text="8月"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <www.qisu666.sdk.partner.widget.calendar.CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="180dp"
+            android:layout_height="180dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/myinvest_mingxi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:paddingBottom="5dp"
+        android:text="投资明细"
+        android:textColor="@color/text_black"
+        android:textSize="22dp" />
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/text_gray"-->
+        <!--android:layout_marginLeft="25dp"-->
+        <!--android:layout_marginRight="25dp"-->
+        <!--/>-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:paddingBottom="5dp"
+        android:text="暂无数据"
+        android:textColor="@color/text_black"
+        android:paddingTop="15dp"
+        android:textSize="15dp" />
+
+
+
+
+</LinearLayout>

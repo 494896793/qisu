@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<www.qisu666.com.widget.MyRadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rg_car_out"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical"
+    android:padding="@dimen/default_margin_tnb">
+
+    <LinearLayout
+        android:id="@+id/ll_car_split_hour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/linear_shape"
+        android:orientation="horizontal">
+
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/confirm_car_type_zijia_fenshizuche_gengduo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/gengduo1"
+                android:text="更多"
+                android:textColor="@color/bg_navi_topic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+
+                <RelativeLayout
+                    android:paddingTop="@dimen/dimen_5dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tx"
+                        style="@style/TextView_Content_Title_Black"
+                        android:text="分时租车"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:textColor="@color/new_text_gray"
+                        android:layout_marginTop="@dimen/dimen_1dp"
+                        android:layout_toRightOf="@id/tx"
+                        android:layout_marginLeft="@dimen/dimen_19dp"
+                        android:paddingTop="@dimen/dimen_1dp"
+                        android:paddingBottom="@dimen/dimen_1dp"
+                        android:paddingLeft="@dimen/dimen_5dp"
+                        android:paddingRight="@dimen/dimen_5dp"
+                        android:text="电度+里程+时间"
+                        android:background="@drawable/tx_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:id="@+id/minute_img"
+                        android:layout_marginRight="@dimen/dimen_20dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/yc_18"
+                        android:layout_width="@dimen/dimen_30dp"
+                        android:layout_height="@dimen/dimen_30dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:background="@color/bianxian"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_1dp"/>
+
+                <RelativeLayout
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/dimen_13dp"
+                    android:layout_marginBottom="@dimen/dimen_13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/dimen_14sp"
+                        android:text="电度费"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/electricityCharge_tx"
+                        android:text="元/公里"
+                        android:layout_alignParentRight="true"
+                        android:textSize="@dimen/dimen_15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <View
+                    android:background="@color/bianxian"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_1dp"/>
+
+                <RelativeLayout
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/dimen_13dp"
+                    android:layout_marginBottom="@dimen/dimen_13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/dimen_14sp"
+                        android:text="里程费"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/chargingByMileage_tx"
+                        android:text="元/公里"
+                        android:layout_alignParentRight="true"
+                        android:textSize="@dimen/dimen_15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <View
+                    android:background="@color/bianxian"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_1dp"/>
+
+                <RelativeLayout
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/dimen_13dp"
+                    android:layout_marginBottom="@dimen/dimen_13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/dimen_14sp"
+                        android:text="时长费"
+                        android:id="@+id/tx3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RelativeLayout
+                        android:id="@+id/time_relative"
+                        android:padding="@dimen/dimen_8dp"
+                        android:layout_toRightOf="@id/tx3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/triangles_icon"
+                            android:src="@mipmap/triangless"
+                            android:layout_width="@dimen/dimen_9dp"
+                            android:layout_height="@dimen/dimen_6dp" />
+                    </RelativeLayout>
+                    <TextView
+                        android:gravity="right"
+                        android:id="@+id/time_money_tx"
+                        android:text="元/小时"
+                        android:layout_alignParentRight="true"
+                        android:textSize="@dimen/dimen_15sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen_20dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/confirm_car_type_zijia_fenshizuche"
+                    style="@style/TextView_Subtitle_Gray"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="@dimen/default_margin_tnb"
+                    android:text="费用"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RadioButton
+            android:visibility="gone"
+            android:id="@+id/rb_car_split_hour"
+            style="@style/RadioButton_Car2"
+            android:layout_marginRight="@dimen/dimen_20dp"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:id="@+id/ll_car_split_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/linear_shape"
+        android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/dimen_3dp"
+                android:paddingRight="@dimen/dimen_3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/tv_order_type"
+                    style="@style/TextView_Content_Title_Black"
+                    android:text="日套餐"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/dimen_2dp"
+                    android:layout_toRightOf="@id/tv_order_type"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"
+                    style="@style/TextView_Content_Title_Black"
+                    android:text="(不足1天按1天计,电度费另计)"
+                    android:textSize="14sp" />
+                <ImageView
+                    android:id="@+id/day_img"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/yc_17"
+                    android:layout_width="@dimen/dimen_30dp"
+                    android:layout_height="@dimen/dimen_30dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:background="@color/bianxian"
+                android:layout_width="match_parent"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:layout_height="@dimen/dimen_1dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/tv_order_type_tip"
+                    style="@style/TextView_Subtitle_Gray"
+                    android:text="套餐费"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_toLeftOf="@+id/tx2"
+                        android:id="@+id/tv_order_day"
+                        style="@style/TextView_Content_Title_Black"
+                        android:layout_marginLeft="15dp"
+                        android:text="日套餐"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_marginRight="@dimen/dimen_20dp"
+                        android:id="@+id/tx2"
+                        android:layout_alignParentRight="true"
+                        style="@style/TextView_Content_Title_Black"
+                        android:text="元/天,包车时段(00:00-23:59)"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <RadioButton
+            android:visibility="gone"
+            android:id="@+id/rb_car_split_day"
+            style="@style/RadioButton_Car2"
+            android:layout_marginRight="@dimen/dimen_20dp"/>
+    </LinearLayout>
+
+</www.qisu666.com.widget.MyRadioGroup>

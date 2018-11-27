@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background">
+
+    <TextView
+        android:id="@+id/tv_male"
+        style="@style/tv_popup"
+        android:text="@string/personal_gender_male"/>
+
+    <TextView
+        android:id="@+id/tv_female"
+        style="@style/tv_popup"
+        android:text="@string/personal_gender_female"
+        android:layout_marginTop="@dimen/divide_height" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        style="@style/tv_popup"
+        android:text="@string/app_cancel"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:orientation="vertical"
+    android:id="@+id/item_term_layout"
+    >
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#90f0f0f0"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--/>-->
+
+    <LinearLayout
+        android:id="@+id/myinvest_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/myinvest_id"
+            android:layout_width="20dp"
+            android:layout_height="88dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:background="@color/bg_dark_primary"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/bg_white"
+            android:textSize="18dp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/myinvest_carimg"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:src="@mipmap/cs_car"
+                android:layout_marginLeft="15dp"
+                />
+            <TextView
+                android:id="@+id/myinvest_carname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="荣威E-投资型"
+                android:layout_marginLeft="15dp"
+                android:textSize="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            >
+            <TextView
+                android:id="@+id/myinvest_statues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="状态：投资中"
+                android:textSize="13dp"
+                />
+            <TextView
+                android:id="@+id/myinvest_statues_hetong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合同状态：不可解除"
+                android:textSize="13dp"
+                />
+            <TextView
+                android:id="@+id/myinvest_buy_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="认购时间：2018-04-01"
+                android:textSize="13dp"
+                />
+            <TextView
+                android:id="@+id/myinvest_return_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分红到账时间：2023-04-01"
+                android:textSize="13dp"
+                />
+            <TextView
+                android:id="@+id/myinvest_remove_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合同解除时间：2023-04-01"
+                android:textSize="13dp"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

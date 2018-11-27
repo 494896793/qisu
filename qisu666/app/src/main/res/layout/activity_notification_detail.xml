@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/default_padding_lnr">
+
+            <TextView
+                android:textColor="@color/text_white"
+                android:id="@+id/tv_notice_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/text_content_title"
+                android:singleLine="true"
+                android:gravity="center"/>
+
+            <TextView
+                android:textColor="@color/text_white"
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/text_small"
+                android:layout_marginTop="@dimen/default_margin_tnb"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/default_margin_tnb"/>
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_height"
+                android:background="@color/divide_gray"/>
+
+            <TextView
+                android:textColor="@color/text_white"
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/text_normal"
+                android:layout_marginTop="@dimen/default_margin_tnb"/>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

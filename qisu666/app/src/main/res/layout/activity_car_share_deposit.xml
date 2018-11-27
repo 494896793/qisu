@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical"
+    tools:context="www.qisu666.com.activity.CarShareDepositActivity">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/content_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:src="@mipmap/yc_34" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/yc_36" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:src="@mipmap/yc_39" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@drawable/white_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_deposit_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="20000"
+            android:textColor="@color/orange"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_deposit_pay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="交通违法保证金（元）"
+            android:textColor="@color/text_gray"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="用车完毕后可申请退还，不申请则下次用车无需重复缴纳"
+        android:textColor="@color/text_gray"
+        android:textSize="13sp" />
+
+
+    <TextView
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/default_margin_lnr"
+        android:layout_marginRight="@dimen/default_margin_lnr"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/selector_primary_btn_a"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/recharge_submit"
+        android:textColor="@color/main_background"
+        android:textSize="18sp" />
+
+</LinearLayout>

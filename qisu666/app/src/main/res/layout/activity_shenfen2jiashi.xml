@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_main"
+    android:background="@color/main_background">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <LinearLayout
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/tx_radio"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/id_linear"
+                android:paddingLeft="11dp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="14dp"
+                android:layout_width="160dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/idcard_title"
+                    android:text="1、身份证人像面"
+                    android:textSize="14sp"
+                    android:textColor="@color/new_text_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_marginTop="11dp"
+                    android:id="@+id/img_front_img"
+                    android:layout_width="163dp"
+                    android:layout_height="102dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/yc_40" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@id/id_linear"
+                android:paddingLeft="11dp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="14dp"
+                android:layout_width="160dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/idcard_title2"
+                    android:text="2、身份证国徽面"
+                    android:textSize="14sp"
+                    android:textColor="@color/new_text_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_marginTop="11dp"
+                    android:id="@+id/img_back_img"
+                    android:layout_width="163dp"
+                    android:layout_height="102dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/yc_41" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_toRightOf="@id/id_linear"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/person_title"
+                    android:text="3、个人正面照"
+                    android:textSize="14sp"
+                    android:textColor="@color/new_text_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_marginTop="11dp"
+                    android:id="@+id/takephoto"
+                    android:layout_width="170dp"
+                    android:layout_height="247dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/yc_59" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <www.qisu666.com.widget.ClearEditText
+            android:layout_marginTop="39dp"
+            android:id="@+id/et_identity_name"
+            style="@style/et_common"
+            android:layout_marginLeft="11dp"
+            android:background="@color/content_bg"
+            android:hint="请输入姓名"
+            android:maxLength="8"
+            android:padding="7dp"
+            android:textColor="@color/text_white"
+            android:textColorHint="@color/text_gray"
+            android:textSize="14sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/bianxian" />
+
+        <www.qisu666.com.widget.ClearEditText
+            android:layout_marginTop="35dp"
+            android:id="@+id/et_identity_num"
+            style="@style/et_common"
+            android:layout_marginLeft="11dp"
+            android:background="@color/content_bg"
+            android:hint="@string/car_share_confirm_identity_hint_id"
+            android:padding="7dp"
+            android:textColor="@color/text_white"
+            android:textColorHint="@color/text_gray"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/bianxian" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+
+            <ImageView
+                android:id="@+id/takephotos"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/shenfen_tou" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:alpha="0.2"
+                android:background="@color/content_bg" />
+
+
+            <!--<ImageView-->
+            <!--android:layout_width="45dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginTop="50dp"-->
+            <!--android:src="@mipmap/shenfen_camera" />-->
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="@dimen/default_padding_lnr"
+        android:layout_marginRight="@dimen/default_padding_lnr"
+        android:background="@drawable/selector_primary_btn_a"
+        android:text="立即上传"
+        android:textColor="@color/main_background"
+        android:textSize="@dimen/text_title" />
+
+</RelativeLayout>

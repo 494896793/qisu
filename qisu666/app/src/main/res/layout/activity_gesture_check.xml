@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical"
+    tools:context="www.qisu666.com.activity.GestureCheckActivity">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/content_bg">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="广州市"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_title" />
+
+        <ImageView
+            android:id="@+id/img_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/title_tnb_padding"
+            android:paddingLeft="@dimen/title_lnr_padding"
+            android:paddingRight="@dimen/title_lnr_padding"
+            android:paddingTop="@dimen/title_tnb_padding"
+            android:src="@mipmap/ic_left_arrow_white" />
+
+        <Button
+            android:id="@+id/btn_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_title_left"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingLeft="@dimen/title_lnr_padding"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_title_btn"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_title_right"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingRight="@dimen/title_lnr_padding"
+            android:text="数字密码"
+            android:textColor="@color/new_primary"
+            android:textSize="@dimen/text_title" />
+
+        <!--<Button-->
+        <!--android:id="@+id/btn_title_right"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_toLeftOf="@+id/img_title_right"-->
+        <!--android:background="@null"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingRight="@dimen/title_lnr_padding"-->
+        <!--android:textColor="@color/text_white"-->
+        <!--android:textSize="@dimen/text_title_btn"-->
+        <!--android:visibility="gone" />-->
+
+        <ImageView
+            android:id="@+id/img_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/title_tnb_padding"
+            android:paddingRight="@dimen/title_lnr_padding"
+            android:paddingTop="@dimen/title_tnb_padding" />
+
+        <ImageView
+            android:id="@+id/img_title_right2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/img_title_right"
+            android:paddingBottom="@dimen/title_tnb_padding"
+            android:paddingLeft="@dimen/title_lnr_padding"
+            android:paddingTop="@dimen/title_tnb_padding" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_primary"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_check_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="msg"
+        android:textColor="@color/orange"
+        android:textSize="16dp" />
+
+
+    <com.github.ihsg.patternlocker.PatternLockerView
+        android:id="@+id/pattern_lock_check_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        app:plv_color="@color/text_white"
+        app:plv_errorColor="@color/text_red"
+        app:plv_fillColor="@color/main_background"
+        app:plv_hitColor="@color/new_primary"
+        app:plv_lineWidth="3dp" />
+
+    <TextView
+        android:id="@+id/tv_chongzhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:padding="8dp"
+        android:text="重置密码"
+        android:textColor="@color/new_gray"
+        android:textSize="14sp" />
+</LinearLayout>

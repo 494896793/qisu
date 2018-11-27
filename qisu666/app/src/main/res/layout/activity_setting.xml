@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_primary" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_parent"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:background="@drawable/linear_shape"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_about"
+            style="@style/LL_Item2"
+            >
+
+            <TextView
+                style="@style/TextView_Subtitle_Black_Weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="关于我们"
+                android:textColor="@color/text_white"
+                android:textSize="15sp" />
+
+            <ImageView style="@style/Right_Arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_check_update"
+            style="@style/LL_Item2">
+
+            <TextView
+                style="@style/TextView_Subtitle_Black_Weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="检查新版本"
+                android:textColor="@color/text_white"
+                android:textSize="15sp" />
+
+            <ImageView style="@style/Right_Arrow" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_protocol"
+            style="@style/LL_Item2">
+
+            <TextView
+                style="@style/TextView_Subtitle_Black_Weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="用户协议"
+                android:textColor="@color/text_white"
+                android:textSize="15sp" />
+
+            <ImageView style="@style/Right_Arrow" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_uescar"
+            style="@style/LL_Item2">
+
+            <TextView
+                style="@style/TextView_Subtitle_Black_Weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="用车协议"
+                android:textColor="@color/text_white"
+                android:textSize="15sp" />
+
+            <ImageView style="@style/Right_Arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_clear_memory"
+            style="@style/LL_Item2">
+
+            <TextView
+                style="@style/TextView_Subtitle_Black_Weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="清除缓存"
+                android:textColor="@color/text_white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_cache_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.00MB"
+                android:textColor="@color/text_gray"
+                android:textSize="14sp" />
+
+            <ImageView style="@style/Right_Arrow" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_version_info"
+            style="@style/LL_Item2">
+
+            <TextView
+                style="@style/TextView_Subtitle_Black_Weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="当前版本"
+                android:textColor="@color/text_white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_version_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="1dp"
+                android:text="1.1.7"
+                android:textColor="@color/text_gray"
+                android:textSize="14sp" />
+
+            <ImageView style="@style/Right_Arrow" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_version_info"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="@dimen/default_margin_lnr"-->
+    <!--android:text="当前版本：v1.0.0"-->
+    <!--android:textColor="@color/text_white" />-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <Button
+        android:layout_marginLeft="@dimen/dimen_37dp"
+        android:layout_marginRight="@dimen/dimen_37dp"
+        android:id="@+id/btn_unlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/selector_primary_btn"
+        android:text="@string/setting_exit"
+        android:textColor="@color/main_background"
+        android:textSize="18sp" />
+
+</LinearLayout>

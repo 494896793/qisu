@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_item_car_use"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/main_radio"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/dimen_7dp"
+    android:paddingLeft="@dimen/default_padding_lnr"
+    android:paddingRight="@dimen/default_padding_lnr">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_use_time"
+            style="@style/TextView_Normal_Black"
+            android:text="使用时长: "
+            android:textColor="@color/text_white"
+            android:textSize="15sp" />
+
+        <cn.iwgang.countdownview.CountdownView
+            android:id="@+id/cv_time_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            app:isConvertDaysToHours="true"
+            app:isHideTimeBackground="true"
+            app:isShowDay="false"
+            app:isShowHour="true"
+            app:isShowMillisecond="false"
+            app:isShowMinute="true"
+            app:isShowSecond="true"
+            app:isTimeTextBold="true"
+            app:suffixDay=":"
+            app:suffixGravity="bottom"
+            app:suffixHour=":"
+            app:suffixMinute=":"
+            app:suffixSecond=""
+            app:suffixTextColor="@color/text_white"
+            app:suffixTextSize="20sp"
+            app:timeTextColor="@color/text_white"
+            app:timeTextSize="20sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/dongli_navi"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@mipmap/yc_9"
+            android:visibility="gone" />
+
+
+        <TextView
+            style="@style/TextView_Normal_Black"
+            android:layout_marginTop="20dp"
+            android:text="当前费用:"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_time_use_money"
+            style="@style/TextView_Normal_Dark_Gray_MarginLeft"
+            android:layout_marginTop="20dp"
+            android:text="0元"
+            android:textColor="@color/text_red"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/money_gengduo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/gengduo1"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_car_use_detail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ll_item_car_use_shichang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时长费:20元"
+                android:textColor="@color/bg_black_transparent" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/ll_item_car_use_licheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:text="里程费:20元"
+                android:textColor="@color/bg_black_transparent" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ll_item_car_use_diandu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电度费:20元"
+                android:textColor="@color/bg_black_transparent" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/ll_item_car_use_zuche"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:text="租车费:20元"
+                android:textColor="@color/bg_black_transparent" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

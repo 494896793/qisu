@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="www.qisu666.com.activity.ChoosePowerActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <LinearLayout
+        android:id="@+id/layout_hybird"
+        style="@style/LL_Item"
+        android:layout_marginTop="@dimen/default_margin_tnb">
+
+        <TextView
+            style="@style/TextView_Subtitle_Black_Weight"
+            android:text="混合动力"/>
+
+        <ImageView
+            style="@style/Right_Arrow"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/Divide_Horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/layout_electric"
+        style="@style/LL_Item">
+
+        <TextView
+            style="@style/TextView_Subtitle_Black_Weight"
+            android:text="纯电动"/>
+
+        <ImageView
+            style="@style/Right_Arrow"/>
+
+    </LinearLayout>
+
+</LinearLayout>

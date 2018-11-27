@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/bg_primary"
+    android:id="@+id/layout_main">
+
+    <include
+        layout="@layout/layout_title_primary" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_primary"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/cs_car_ok" />
+
+
+            <TextView
+                style="@style/TextView_Normal_Black"
+                android:layout_marginTop="@dimen/default_margin_tnb"
+                android:text="认购成功" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_below="@+id/ly_top"
+                android:layout_marginLeft="@dimen/default_margin_tnb"
+                android:layout_marginRight="@dimen/default_margin_tnb"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/cs_car_board"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="35dp"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:paddingTop="15dp">
+
+
+                <TextView
+                    android:id="@+id/compile_txt"
+                    style="@style/TextView_Normal_Black"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:text="您已成功认购xxx型汽车认购,认购合同已生成。认购合同及分红日程可在“个人中心-我的认购“处查看。”"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_car_complete_sure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/default_margin_lnr"
+                android:layout_marginRight="@dimen/default_margin_lnr"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/selector_primary_btn_a"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="@dimen/default_padding"
+                android:text="确认"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_subtitle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

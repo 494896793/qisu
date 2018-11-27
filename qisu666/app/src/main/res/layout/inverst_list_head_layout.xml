@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:background="@color/main_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/tx_title"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:lineSpacingExtra="5dp"
+        android:gravity="center"
+        android:paddingLeft="28dp"
+        android:paddingRight="20dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/linear_shape"
+        android:textSize="13sp"
+        android:textColor="@color/new_text_gray"
+        android:text="1辆车开放认购中，共发布17份汽车投资，已认购1份，待认购16份"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="185dp">
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:id="@+id/re_circle"
+            android:layout_width="@dimen/dimen_165dp"
+            android:layout_height="@dimen/dimen_165dp">
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@mipmap/rg_22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+                  <www.qisu666.com.widget.CircleProgressBar
+                      android:layout_centerInParent="true"
+                      android:id="@+id/pro"
+                      android:layout_width="148dp"
+                      android:layout_height="148dp" />
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:id="@+id/total_num"
+                    android:textColor="@color/text_gray"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_below="@id/total_num"
+                    android:textSize="13sp"
+                    android:text="总计(份)"
+                    android:textColor="@color/text_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:paddingBottom="@dimen/dimen_8dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_toRightOf="@id/re_circle"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tx_already_buy"
+                android:textColor="@color/text_white"
+                android:textSize="18sp"
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/rg_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="已认购(份）"
+                    android:textColor="@color/text_gray"
+                    android:textSize="13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tx_no_buy"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/text_white"
+                android:textSize="18sp"
+                android:text="16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/rg_19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="待认购(份）"
+                    android:textColor="@color/text_gray"
+                    android:textSize="13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

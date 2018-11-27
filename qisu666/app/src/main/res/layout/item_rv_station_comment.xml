@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/default_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/icon_comment_portrait"
+                android:layout_height="@dimen/icon_comment_portrait"
+                android:src="@mipmap/ic_personal_info_portrait"
+                android:layout_marginRight="@dimen/default_margin_lnr"/>
+
+            <TextView
+                android:id="@+id/tv_alias"
+                style="@style/TextView_Normal_Black"
+                android:layout_weight="1"
+                android:text="昵称"
+                android:textStyle="bold"/>
+
+            <www.qisu666.com.widget.StarBar
+                android:id="@+id/starBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ratingbar:starEmpty="@mipmap/ic_star_unselect"
+                ratingbar:starFill="@mipmap/ic_star_selected"
+                ratingbar:starDistance="-1dp"
+                ratingbar:starCount="5"
+                ratingbar:starSize="17dp"/>
+
+            <TextView
+                android:id="@+id/tv_score"
+                style="@style/TextView_Small_Black"
+                android:textColor="@color/text_gray"
+                android:text="4分"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_comment"
+            style="@style/TextView_Normal_Black"
+            android:text="评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginTop="@dimen/default_margin_tnb"
+            android:layout_marginLeft="40dp"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/TextView_Subtitle_Gray"
+            android:textSize="@dimen/text_small"
+            android:text="2016-05-28 14:21:23"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="@dimen/default_margin_tnb"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/Divide_Horizontal"/>
+
+</LinearLayout>

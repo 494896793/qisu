@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <brand>
+        <id>0206</id>
+        <name>一汽</name>
+        <types>
+            <type>奔腾 PHEV</type>
+        </types>
+    </brand>
+    <brand>
+        <id>0205</id>
+        <name>华晨宝马</name>
+        <types>
+            <type>5系混合动力</type>
+        </types>
+    </brand>
+    <brand>
+        <id>0204</id>
+        <name>上汽</name>
+        <types>
+            <type>荣威 550PHEV</type>
+        </types>
+    </brand>
+    <brand>
+        <id>0203</id>
+        <name>广汽</name>
+        <types>
+            <type>混合动力</type>
+        </types>
+    </brand>
+    <brand>
+        <id>0202</id>
+        <name>比亚迪</name>
+        <types>
+            <type>唐</type>
+            <type>M3</type>
+            <type>秦</type>
+        </types>
+    </brand>
+    <brand>
+        <id>0201</id>
+        <name>江淮</name>
+        <types>
+            <type>和悦 iREV</type>
+        </types>
+    </brand>
+</root>

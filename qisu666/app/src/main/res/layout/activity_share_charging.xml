@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="www.qisu666.com.activity.ShareChargingActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/layout_search"
+            style="@style/LL_Item"
+            android:layout_marginLeft="@dimen/default_margin_lnr"
+            android:layout_marginRight="@dimen/default_margin_lnr"
+            android:layout_marginTop="@dimen/default_margin_tnb"
+            android:background="@drawable/selector_white_btn_a"
+            android:padding="@dimen/default_padding">
+            
+            <ImageView
+                android:layout_width="@dimen/icon_small_wnh"
+                android:layout_height="@dimen/icon_small_wnh"
+                android:src="@mipmap/ic_search"/>
+
+            <TextView
+                style="@style/TextView_Subtitle_Gray"
+                android:layout_marginLeft="@dimen/default_margin_lnr"
+                android:text="@string/share_charging_search"/>
+
+        </LinearLayout>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/icon_marker_height"
+            android:src="@mipmap/ic_share_charging_marker"
+            android:layout_gravity="center"/>
+        
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/default_padding_lnr"
+            android:paddingRight="@dimen/default_padding_lnr"
+            android:paddingTop="@dimen/default_padding"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/img_address"
+                style="@style/Iv_Index_Item"
+                android:src="@mipmap/ic_share_charging_address" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/TextView_Subtitle_Black"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:maxLines="2"
+                android:text="@string/share_charging_loading" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_latlng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/default_margin_tnb"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="@dimen/default_margin_tnb">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/TextView_Normal_Black"
+                    android:text="@string/share_charging_lat" />
+
+                <TextView
+                    android:id="@+id/tv_lng"
+                    style="@style/TextView_Normal_Black"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/TextView_Normal_Black"
+                    android:text="@string/share_charging_lng" />
+
+                <TextView
+                    android:id="@+id/tv_lat"
+                    style="@style/TextView_Normal_Black"
+                    android:text="" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            style="@style/Divide_Horizontal_Full"/>
+
+        <TextView
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_subtitle"
+            android:text="@string/share_charging_submit"
+            android:background="@drawable/selector_primary_btn_a"
+            android:gravity="center"
+            android:layout_below="@+id/layout_latlng"
+            android:layout_marginTop="@dimen/default_margin_tnb"
+            android:layout_marginLeft="@dimen/default_margin_lnr"
+            android:layout_marginRight="@dimen/default_margin_lnr"
+            android:layout_marginBottom="@dimen/default_margin_tnb"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

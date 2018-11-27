@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:id="@+id/item_30detail_layout"
+    android:layout_height="40dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginRight="@dimen/default_margin_lnr"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/carbuy_date_txt"
+            style="@style/TextView_Subtitle_Black"
+            android:text="日期：" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/carbuy_money_txt"
+            style="@style/TextView_Subtitle_Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center_vertical"
+            android:text="已分红收益：" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

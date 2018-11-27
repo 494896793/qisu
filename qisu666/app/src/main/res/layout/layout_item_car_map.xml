@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dongli_map_old"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_marginBottom="@dimen/dimen_6dp"
+    android:orientation="horizontal"
+    android:background="@drawable/main_radio"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/default_padding_lnr"
+    android:paddingRight="@dimen/default_padding_lnr">
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/yc_11" />
+
+    <TextView
+        android:id="@+id/tv_map_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:singleLine="true"
+        android:textColor="@color/text_white"
+        android:textSize="15sp"
+        android:maxLength="10"
+        android:ellipsize="end"
+        android:text="" />
+    <TextView
+        android:id="@+id/distance_tx"
+        android:textColor="@color/text_white"
+        android:gravity="right"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/img_navi"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:src="@mipmap/yc_9" />
+
+</LinearLayout>
+

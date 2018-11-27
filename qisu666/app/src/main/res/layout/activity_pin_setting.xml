@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    tools:context="www.qisu666.com.activity.PinSettingActivity">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/content_bg">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="广州市"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_title" />
+
+        <ImageView
+            android:id="@+id/img_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/title_tnb_padding"
+            android:paddingLeft="@dimen/title_lnr_padding"
+            android:paddingRight="@dimen/title_lnr_padding"
+            android:paddingTop="@dimen/title_tnb_padding"
+            android:src="@mipmap/ic_left_arrow_white" />
+
+        <Button
+            android:id="@+id/btn_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_title_left"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingLeft="@dimen/title_lnr_padding"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_title_btn"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_title_right"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingRight="@dimen/title_lnr_padding"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_title_btn"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/title_tnb_padding"
+            android:paddingRight="@dimen/title_lnr_padding"
+            android:paddingTop="@dimen/title_tnb_padding" />
+
+        <ImageView
+            android:id="@+id/img_title_right2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/img_title_right"
+            android:paddingBottom="@dimen/title_tnb_padding"
+            android:paddingLeft="@dimen/title_lnr_padding"
+            android:paddingTop="@dimen/title_tnb_padding" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_primary"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pin_switcher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="30dp"
+        android:text="请设置6位数字密码"
+        android:textColor="@color/text_white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/pin_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pin_switcher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/orange"
+        android:textSize="13sp" />
+
+    <ViewSwitcher
+        android:id="@+id/pin_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="150dp">
+
+        <com.alimuzaffar.lib.pin.PinEntryEditText
+            android:id="@+id/txt_pin"
+            android:layout_width="128dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="@android:color/transparent"
+            android:textIsSelectable="false"
+            android:textSize="0px"
+            android:visibility="visible"
+            app:pinBackgroundDrawable="@drawable/bg_pin_round"
+            app:pinBackgroundIsSquare="true"
+            app:pinCharacterSpacing="8dp"
+            app:pinTextBottomPadding="4dp" />
+
+        <com.alimuzaffar.lib.pin.PinEntryEditText
+            android:id="@+id/txt_pin_confirm"
+            android:layout_width="128dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="@android:color/transparent"
+            android:textIsSelectable="false"
+            android:textSize="0px"
+            android:visibility="visible"
+            app:pinBackgroundDrawable="@drawable/bg_pin_round"
+            app:pinBackgroundIsSquare="true"
+            app:pinCharacterSpacing="8dp"
+            app:pinTextBottomPadding="4dp" />
+    </ViewSwitcher>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pin_hint"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="请牢记此数字密码，下次用车时将需要使用"
+        android:textColor="@color/text_gray"
+        android:textSize="13sp" />
+
+</RelativeLayout>

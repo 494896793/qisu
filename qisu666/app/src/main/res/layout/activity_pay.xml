@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="www.qisu666.com.activity.PayActivity"
+    android:orientation="vertical"
+    android:background="@color/bg_primary">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_tnb"
+        android:background="@color/bg_white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_station_info"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="@dimen/default_padding"
+            android:text="@string/pay_account"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_subtitle" />
+
+        <!--<View style="@style/Divide_Vertical" />-->
+
+        <RadioButton
+            android:id="@+id/radio_direct"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_station_info"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="@dimen/default_padding"
+            android:text="@string/pay_direct"
+            android:textColor="@color/selector_text_color_primary_to_black"
+            android:textSize="@dimen/text_subtitle" />
+
+        <View style="@style/Divide_Vertical"
+            android:visibility="gone"/>
+
+        <RadioButton
+            android:id="@+id/radio_others"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_station_info"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="@dimen/default_padding"
+            android:text="@string/pay_others"
+            android:visibility="gone"
+            android:textColor="@color/selector_text_color_primary_to_black"
+            android:textSize="@dimen/text_subtitle" />
+
+    </RadioGroup>
+
+    <View style="@style/Divide_Horizontal" />
+
+    <www.qisu666.com.widget.CustomViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </www.qisu666.com.widget.CustomViewPager>
+
+
+
+</LinearLayout>

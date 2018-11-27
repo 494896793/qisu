@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/yc_28"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <!--<TextView-->
+    <!--style="@style/TextView_Normal_Black"-->
+    <!--android:text="@string/car_share_return_car_tip"-->
+    <!--android:layout_marginTop="@dimen/default_margin_lnr"-->
+    <!--android:layout_marginBottom="@dimen/default_margin_lnr"-->
+    <!--/>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dp"-->
+    <!--android:src="@mipmap/cs_car_radio"/>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_marginTop="@dimen/default_margin_lnr"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:paddingLeft="30dp"-->
+    <!--android:paddingRight="30dp"-->
+    <!--&gt;-->
+
+    <!--<LinearLayout-->
+    <!--style="@style/LL_Main_Index_Item"-->
+    <!--android:background="@null"-->
+    <!--&gt;-->
+    <!--<ImageView-->
+    <!--style="@style/Iv_Car_Return_Item"-->
+    <!--android:src="@mipmap/cs_car_light"/>-->
+    <!--<TextView-->
+    <!--style="@style/Text_Car_Share_Item"-->
+    <!--android:layout_marginTop="0dp"-->
+    <!--android:text="@string/car_share_close_light"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--style="@style/LL_Main_Index_Item"-->
+    <!--android:background="@null"-->
+    <!--&gt;-->
+    <!--<ImageView-->
+    <!--style="@style/Iv_Car_Return_Item"-->
+    <!--android:src="@mipmap/cs_car_window"/>-->
+    <!--<TextView-->
+    <!--style="@style/Text_Car_Share_Item"-->
+    <!--android:layout_marginTop="0dp"-->
+    <!--android:text="@string/car_share_close_window"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--style="@style/LL_Main_Index_Item"-->
+    <!--android:background="@null"-->
+    <!--&gt;-->
+    <!--<ImageView-->
+    <!--style="@style/Iv_Car_Return_Item"-->
+    <!--android:src="@mipmap/cs_car_return_p"/>-->
+    <!--<TextView-->
+    <!--style="@style/Text_Car_Share_Item"-->
+    <!--android:layout_marginTop="0dp"-->
+    <!--android:text="@string/car_share_p_exactly"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--style="@style/LL_Main_Index_Item"-->
+    <!--android:background="@null"-->
+    <!--&gt;-->
+    <!--<ImageView-->
+    <!--style="@style/Iv_Car_Return_Item"-->
+    <!--android:src="@mipmap/cs_car_rubbish"/>-->
+    <!--<TextView-->
+    <!--style="@style/Text_Car_Share_Item"-->
+    <!--android:layout_marginTop="0dp"-->
+    <!--android:text="@string/car_share_with_rubbish"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <TextView
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="@dimen/default_margin_lnr"
+        android:layout_marginRight="@dimen/default_margin_lnr"
+        android:background="@drawable/selector_primary_btn_a"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/car_share_return_car_sure"
+        android:textColor="@color/main_background"
+        android:textSize="18sp" />
+
+</LinearLayout>

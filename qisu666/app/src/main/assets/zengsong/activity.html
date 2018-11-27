@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0 auto;
+	}
+	body {
+		width: 100%;
+		background:#070a25;
+	}
+	.all {
+		width: 100%;
+		height: 100%;
+	}
+	.btn {
+		position: fixed;
+		width: 20%;
+		right: 0;
+		top: 50%;
+	}
+</style>
+<body>
+	<img class="all" src="al.png" alt="">
+	<img class="btn" onclick="call()" src="btn.png" alt="">
+</body>
+<script type="text/javascript">
+	var u = navigator.userAgent;
+	var isAndroid = u.indexOf('Android') > -1 || u.indexOf('android') > -1 || u.indexOf('Andr') > -1 || u.indexOf('andr') > -1; //android终端
+	var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+     function call(){
+      if(isiOS){
+      		window.webkit.messageHandlers.hello.postMessage("zengsong");
+      }else{
+      		android.hello("zengsong");
+      }
+    }
+
+</script>
+</html>

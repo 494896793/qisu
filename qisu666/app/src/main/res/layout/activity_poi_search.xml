@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="www.qisu666.com.activity.PoiSearchActivity"
+    android:orientation="vertical"
+    android:background="@color/bg_primary">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_margin_lnr"
+        android:layout_marginRight="@dimen/default_margin_lnr"
+        android:layout_marginTop="@dimen/default_margin_tnb"
+        android:background="@drawable/bg_search">
+
+        <ImageView
+            android:layout_width="@dimen/icon_small_wnh"
+            android:layout_height="@dimen/icon_small_wnh"
+            android:src="@mipmap/ic_search"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_margin_lnr"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/tv_keyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:completionThreshold="1"
+            android:dropDownVerticalOffset="5dp"
+            android:hint="请输入关键字"
+            android:textColorHint="@color/text_gray"
+            android:imeOptions="actionSearch"
+            android:inputType="text|textAutoComplete"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_subtitle"
+            android:paddingTop="@dimen/default_padding"
+            android:paddingRight="@dimen/default_padding"
+            android:paddingBottom="@dimen/default_padding"
+            android:paddingLeft="45dp"/>
+
+    </RelativeLayout>
+
+    <com.linfaxin.recyclerview.PullRefreshLoadRecyclerView
+        android:id="@+id/pull_refresh_load_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/default_margin_lnr"
+        android:layout_marginRight="@dimen/default_margin_lnr"/>
+
+</LinearLayout>

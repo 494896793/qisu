@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary">#00A0E9</color>
+    <color name="primary_second">#BACC1B</color>
+
+    <!--字体-->
+        <color name="text_gray">#6E717B</color>
+    <color name="text_dark_gray">#666666</color>
+    <color name="text_black">#333333</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_light_green">#77d10a</color>
+    <color name="text_red">#f44d61</color>
+    <color name="text_yellow">#ffb51b</color>
+    <color name="text_blue">#45a0f3</color>
+    <color name="text_blue_ali">#00AAEE</color>
+    <color name="text_green_wx">#00BB0C</color>
+
+    <!--背景-->
+    <color name="divide_gray">#ffcccccc</color>
+    <color name="bg_primary">#f5f5f5</color>
+    <color name="bg_dark_green">#FDBF17</color>
+    <color name="bg_dark_primary">#0B86C2</color>
+    <color name="bg_white">#fff</color>
+    <color name="bg_white_transparent">#86ffffff</color>
+    <color name="bg_black_transparent">#86000000</color>
+    <color name="bg_transparent">#0000</color>
+    <color name="bg_licence">#459ff3</color>
+    <color name="bg_navi_topic">#3773CB</color>
+
+    <color name="white">#ffff</color>
+
+    认购页面同意条款
+    <color name="can_login">@color/primary</color>
+    <color name="not_login">#C5C0C0</color>
+
+    <!--takePhoto-->
+    <color name="multiple_image_select_primaryDark">@color/primary</color>
+
+    <!--二维码扫描相关-->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c000A0E9</color>
+
+    <color name="dialog_bg">#6000</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="divider">#ffd2d2d2</color>
+
+    <!-- new version -->
+    <!-- 全局颜色 -->
+    <!-- 主背景色 -->
+    <color name="content_bg">#1B2130</color>
+    <!-- 主背景色 -->
+    <color name="main_background">#0B1222</color>
+    <color name="bianxian">#414654</color>
+    <color name="status_bar_transparent">@android:color/transparent</color>
+
+    <color name="orange">#FF520C</color>
+
+    <!-- 主页 Tab 相关 -->
+    <color name="new_primary">#51E7D3</color>
+    <color name="new_text_gray">#6E717B</color>
+    <color name="new_gray">#B6B8BD</color>
+
+    <!-- 个人中心 Tab 相关 -->
+    <color name="confirm_not_passed">#84878A</color>
+    <color name="confirm_passed">#51E7D3</color>
+    <color name="tool_coupon_badge_bg">#FF520C</color>
+    <color name="user_level_vip">#DAB568</color>
+    <color name="user_level_normal">#84878A</color>
+    <color name="transparent">#00000000</color>
+    <color name="car_second_title">#2D3341</color>
+    <color name="tx_radio2">#383D4A</color>
+    <color name="white_translate">#5C606B</color>
+</resources>

@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical"
+    tools:context="www.qisu666.com.fragment.ServiceFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#1B2130"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tab_chongdian"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="充电订单"
+            android:textStyle="bold"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/dimen_17sp" />
+
+        <TextView
+            android:id="@+id/tab_yongche"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="用车订单"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/dimen_17sp"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/tab_rengou"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="认购订单"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/dimen_17sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:background="@color/content_bg" />
+
+        <RelativeLayout
+            android:id="@+id/line"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:gravity="center"
+            >
+            <View
+                android:id="@+id/viewlines"
+                android:background="@color/text_white"
+                android:layout_width="@dimen/dimen_25dp"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <www.qisu666.com.fragment.order.NonSwipeableViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+
+</LinearLayout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navi2_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:orientation="vertical">
+
+    <View style="@style/Divide_Horizontal_Full" />
+
+    <include layout="@layout/layout_item_car_use" />
+
+    <include layout="@layout/layout_item_driver" />
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_item_car_book"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="45dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:background="@color/content_bg"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingLeft="@dimen/default_padding_lnr"-->
+    <!--android:paddingRight="@dimen/default_padding_lnr">-->
+
+    <!--<TextView-->
+    <!--style="@style/TextView_Normal_Black"-->
+    <!--android:text="预约中"-->
+    <!--android:textColor="@color/text_white" />-->
+
+    <!--<View-->
+    <!--style="@style/Divide_Vertical_Full"-->
+    <!--android:layout_marginLeft="5dp" />-->
+
+    <!--<TextView-->
+    <!--style="@style/TextView_Normal_Dark_Gray_MarginLeft"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="保留时间"-->
+    <!--android:textColor="@color/text_white" />-->
+
+    <!--<cn.iwgang.countdownview.CountdownView-->
+    <!--android:id="@+id/cv_time"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="38dp"-->
+    <!--app:isHideTimeBackground="true"-->
+    <!--app:isShowHour="false"-->
+    <!--app:isShowMillisecond="false"-->
+    <!--app:isShowMinute="true"-->
+    <!--app:isShowSecond="true"-->
+    <!--app:isTimeTextBold="true"-->
+    <!--app:suffixDay=":"-->
+    <!--app:suffixGravity="bottom"-->
+    <!--app:suffixHour=":"-->
+    <!--app:suffixMinute=":"-->
+    <!--app:suffixSecond=""-->
+    <!--app:suffixTextColor="@color/text_white"-->
+    <!--app:suffixTextSize="10sp"-->
+    <!--app:timeTextColor="@color/text_white"-->
+    <!--app:timeTextSize="14sp" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/img_navi2"-->
+    <!--android:layout_width="38dp"-->
+    <!--android:layout_height="38dp"-->
+    <!--android:src="@mipmap/yc_9" />-->
+    <!--</LinearLayout>-->
+
+    <View style="@style/Divide_Horizontal_Full" />
+
+    <include
+        layout="@layout/layout_item_car_map" />
+
+
+    <include layout="@layout/car_item_view" />
+
+    <View style="@style/Divide_Horizontal_Full" />
+
+    <View style="@style/Divide_Horizontal_Full" />
+
+    <LinearLayout
+        android:id="@+id/order_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_dongli_layout"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@color/content_bg"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_car_order_open2_dongli_b"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/Iv_Car_Share_Item"
+                    android:src="@mipmap/yc_23" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text="开启动力"
+                    android:textColor="@color/text_white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/bianxian" />
+
+            <LinearLayout
+                android:id="@+id/ll_car_order_close2_dongli_b"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/Iv_Car_Share_Item"
+                    android:src="@mipmap/yc_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="关闭动力"
+                    android:textColor="@color/text_white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bianxian" />
+
+        <LinearLayout
+            android:background="@drawable/linear_shape"
+            android:id="@+id/ll_car_order"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <LinearLayout
+                android:id="@+id/ll_car_order_bee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:clickable="true">
+
+                <ImageView
+                    style="@style/Iv_Car_Share_Item"
+                    android:src="@mipmap/yc_25" />
+
+                <TextView
+                    style="@style/Text_Car_Share_Item"
+                    android:text="@string/car_share_bee"
+                    android:textColor="@color/text_white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/bianxian" />
+
+            <LinearLayout
+                android:id="@+id/ll_car_order_open"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:clickable="true">
+
+                <ImageView
+                    style="@style/Iv_Car_Share_Item"
+                    android:src="@mipmap/yc_26" />
+
+                <TextView
+                    style="@style/Text_Car_Share_Item"
+                    android:text="@string/car_share_open"
+                    android:textColor="@color/text_white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/bianxian" />
+
+            <LinearLayout
+                android:id="@+id/ll_car_order_close"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:clickable="true">
+
+                <ImageView
+                    style="@style/Iv_Car_Share_Item"
+                    android:src="@mipmap/yc_27" />
+
+                <TextView
+                    style="@style/Text_Car_Share_Item"
+                    android:text="@string/car_share_lock"
+                    android:textColor="@color/text_white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_car_order_back"
+                style="@style/LL_Main_Index_Item"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/Iv_Car_Share_Item"
+                    android:src="@mipmap/cs_car_return" />
+
+                <TextView
+                    style="@style/Text_Car_Share_Item"
+                    android:text="@string/car_share_return" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

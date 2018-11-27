@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="www.qisu666.com.activity.CarInfoActivity"
+    android:orientation="vertical"
+    android:background="@color/bg_primary">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <!--<ListView-->
+        <!--android:id="@+id/lv_person_info"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:listSelector="#0000"-->
+        <!--android:divider="@null"-->
+        <!--android:layout_marginTop="@dimen/default_margin_tnb"-->
+        <!--android:background="@color/bg_white">-->
+
+    <!--</ListView>-->
+
+    <com.linfaxin.recyclerview.PullRefreshLoadRecyclerView
+        android:id="@+id/pull_refresh_load_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mytrip_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@drawable/linear_shape"
+        android:layout_marginLeft="@dimen/dimen_12dp"
+        android:layout_marginRight="@dimen/dimen_12dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mytrip_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@mipmap/qc"
+                android:drawablePadding="10dp"
+                android:text="2008 08 08"
+                android:textColor="@color/text_white"
+                android:textSize="18sp" />
+
+            <!--<View-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_weight="1" />-->
+
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_6dp"
+                android:paddingBottom="@dimen/dimen_2dp"
+                android:paddingTop="@dimen/dimen_2dp"
+                android:paddingRight="@dimen/dimen_6dp"
+                android:background="@drawable/tx_radio"
+                android:id="@+id/mytrip_item_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:text="进行中"
+                android:textColor="@color/new_primary"
+                android:textSize="11sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dimen_11dp"
+                android:gravity="center|right">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/jiant" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/text_gray"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/dimen_40dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/mytrip_item_img"
+                android:layout_width="@dimen/dimen_15dp"
+                android:layout_height="@dimen/dimen_18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:src="@mipmap/yd_22" />
+
+            <TextView
+                android:id="@+id/mytrip_item_wangdian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="金谷创业园"
+                android:textColor="@color/text_white"
+                android:textSize="15sp" />
+
+            <!--<View-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/mytrip_item_payAmount"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginRight="25dp"-->
+            <!--android:text="实付款：0.00元" />-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:background="#F0EFF5" />-->
+
+
+</LinearLayout>

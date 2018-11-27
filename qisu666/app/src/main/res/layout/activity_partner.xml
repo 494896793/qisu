@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/divide_gray">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@mipmap/partner_banner" />
+
+    <com.linfaxin.recyclerview.PullRefreshLoadRecyclerView
+        android:id="@+id/partner_pull_refresh_load_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_subtitle"
+        android:text="立即加入"
+        android:background="@drawable/selector_primary_btn_a"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/default_margin_lnr"
+        android:layout_marginRight="@dimen/default_margin_lnr"
+        android:layout_marginBottom="@dimen/default_margin_tnb"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

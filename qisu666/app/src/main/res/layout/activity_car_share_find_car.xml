@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title_primary"/>
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tab_car_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        app:tl_textSelectColor="@color/primary"
+        app:tl_textUnselectColor="@color/text_gray"
+        app:tl_tab_space_equal="true"
+        app:tl_divider_color="@color/divide_gray"
+        app:tl_divider_padding="13dp"
+        app:tl_indicator_color="@color/primary"
+        app:tl_divider_width="1dp"
+        />
+
+    <View
+        style="@style/Divide_Horizontal"
+        />
+
+    <www.qisu666.com.widget.CustomViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </www.qisu666.com.widget.CustomViewPager>
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_transparent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@drawable/bg_dialog_alert">
+
+        <ImageView
+            android:id="@+id/img_dialog_top"
+            android:src="@mipmap/bg_banner"
+            android:paddingTop="@dimen/default_margin_tnb"
+            android:paddingBottom="@dimen/default_margin_tnb"
+            android:layout_width="90dp"
+            android:layout_height="90dp" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:background="@null"
+
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+            android:text="111"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="111"
+            android:id="@+id/message"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="15dp"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textColor="@color/text_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/primary"/>
+
+        <LinearLayout
+            android:id="@+id/btn_group"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:visibility="gone"
+                android:background="@color/bg_transparent"
+                android:id="@+id/cancel_btn"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="14dp"
+                android:text="取消"
+                android:textColor="@color/text_black"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="0.3dp"
+                android:layout_height="match_parent"
+                android:background="@color/primary"/>
+
+            <TextView
+                android:background="@color/bg_transparent"
+                android:id="@+id/confirm_btn"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="确定"
+                android:textSize="14dp"
+                android:textColor="@color/primary"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/primary"/>
+
+
+        <LinearLayout
+            android:id="@+id/btn_group2"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="@color/bg_transparent"
+                android:gravity="center"
+                android:padding="12dp"
+                android:id="@+id/confirm_btn2"
+                android:text="确定"
+                android:textSize="14dp"
+                android:textColor="@color/primary"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

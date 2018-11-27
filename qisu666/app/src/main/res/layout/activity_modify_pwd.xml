@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="原密码"
+            android:textColor="@color/text_white"
+            android:textSize="18sp" />
+
+        <www.qisu666.com.widget.ClearEditText
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:id="@+id/et_old_pwd"
+            style="@style/et_common"
+            android:textColor="@color/text_white"
+            android:layout_marginTop="15dp"
+            android:background="@color/main_background"
+            android:hint="请输入原密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@color/bianxian"
+            android:layout_width="match_parent" />
+
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="新密码"
+            android:textColor="@color/text_white"
+            android:textSize="18sp" />
+
+        <www.qisu666.com.widget.ClearEditText
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:id="@+id/et_new_pwd"
+            style="@style/et_common"
+            android:layout_marginTop="15dp"
+            android:background="@color/main_background"
+            android:hint="6-16位新密码"
+            android:inputType="textPassword"
+            android:textColor="@color/text_white"
+            android:maxLength="16"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textSize="15sp" />
+
+        <View android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@color/bianxian"
+            />
+
+
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="确认密码"
+            android:textColor="@color/text_white"
+            android:textSize="18sp" />
+
+        <www.qisu666.com.widget.ClearEditText
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:id="@+id/et_new_reinput_pwd"
+            style="@style/et_common"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/text_white"
+            android:background="@color/main_background"
+            android:hint="请再次密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textSize="15sp" />
+
+        <View android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@color/bianxian"
+            />
+
+    </LinearLayout>
+
+    <!--<TableLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/main_background"-->
+    <!--android:orientation="vertical"-->
+    <!--android:stretchColumns="1">-->
+
+    <!--<TableRow-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--style="@style/TextView_Subtitle_Black"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:text="@string/mpwd_old" />-->
+
+    <!--<www.qisu666.com.widget.ClearEditText-->
+    <!--android:id="@+id/et_old_pwd"-->
+    <!--style="@style/et_common"-->
+    <!--android:background="@color/main_background"-->
+    <!--android:hint="请输入原密码"-->
+    <!--android:inputType="textPassword"-->
+    <!--android:maxLength="16" />-->
+    <!--</TableRow>-->
+
+    <!--<View style="@style/Divide_Horizontal" />-->
+
+    <!--<TableRow-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--style="@style/TextView_Subtitle_Black"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:text="@string/mpwd_input" />-->
+
+    <!--<www.qisu666.com.widget.ClearEditText-->
+    <!--android:id="@+id/et_new_pwd"-->
+    <!--style="@style/et_common"-->
+    <!--android:background="@color/main_background"-->
+    <!--android:hint="请输入新密码"-->
+    <!--android:inputType="textPassword"-->
+    <!--android:maxLength="16" />-->
+    <!--</TableRow>-->
+
+    <!--<View style="@style/Divide_Horizontal" />-->
+
+    <!--<TableRow-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--style="@style/TextView_Subtitle_Black"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:text="@string/mpwd_reinput" />-->
+
+    <!--<www.qisu666.com.widget.ClearEditText-->
+    <!--android:id="@+id/et_new_reinput_pwd"-->
+    <!--style="@style/et_common"-->
+    <!--android:background="@color/main_background"-->
+    <!--android:hint="请再次输入新密码"-->
+    <!--android:inputType="textPassword"-->
+    <!--android:maxLength="16" />-->
+    <!--</TableRow>-->
+
+    <!--</TableLayout>-->
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/dimen_25dp"
+        android:layout_marginRight="@dimen/dimen_25dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/selector_primary_btn_a"
+        android:text="保存"
+        android:textColor="@color/main_background"
+        android:textSize="@dimen/text_title" />
+
+</LinearLayout>

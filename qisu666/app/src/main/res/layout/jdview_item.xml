@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+    android:id="@+id/ll_index_message_content"
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="50dp"
+    android:ellipsize="marquee"
+    android:maxWidth="190dp"
+    android:singleLine="true"
+    android:text="奇速微信充值限额问题公告"
+    android:textColor="@android:color/white"
+    android:textSize="17sp" />
+
+    <TextView
+        android:background="@color/transparent"
+        android:paddingTop="@dimen/dimen_2dp"
+        android:layout_centerVertical="true"
+    android:id="@+id/ll_index_message_time"
+    android:layout_width="wrap_content"
+    android:layout_height="18dp"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="20.5dp"
+    android:ellipsize="marquee"
+    android:singleLine="true"
+    android:text="4-28"
+    android:textColor="@color/white_translate"
+    android:textSize="14sp" />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="188dp"/>
+
+    <TextView
+        android:id="@+id/term_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   20辆车开放认购中,共发布200份汽车投资,已认购40份待认购160份,快把心仪的车领回家吧"
+        android:textSize="12dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/text_black"
+        />
+
+</LinearLayout>

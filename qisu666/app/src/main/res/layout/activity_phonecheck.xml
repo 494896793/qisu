@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/main_background"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_title_primary" />
+
+    <LinearLayout
+        android:paddingTop="@dimen/dimen_34dp"
+        android:paddingLeft="@dimen/dimen_34dp"
+        android:paddingRight="@dimen/dimen_34dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="手机号"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dimen_19dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_35dp">
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/tx_1"
+                android:text="+86"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/tx_2"
+                android:layout_toRightOf="@id/tx_1"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/dl_2" />
+            <TextView
+                android:textSize="@dimen/dimen_20dp"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/tx_3"
+                android:layout_toRightOf="@id/tx_2"
+                android:text="|"
+                android:textColor="@color/bianxian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_toRightOf="@id/tx_3"
+                android:id="@+id/et_login_phone"
+                style="@style/et_login"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:hint="请输入您的手机号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textCursorDrawable="@drawable/bg_et_cursor"
+                android:textColor="@color/text_white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/bianxian"
+            android:layout_height="@dimen/dimen_1dp"/>
+        <TextView
+            android:text="验证码"
+            android:layout_marginTop="@dimen/dimen_44dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40dp">
+            <www.qisu666.com.widget.ClearEditText
+                android:id="@+id/et_login_code"
+                style="@style/et_login"
+                android:layout_width="match_parent"
+                android:hint="请输入您的手机号"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textCursorDrawable="@drawable/bg_et_cursor"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/dimen_15sp" />
+            <TextView
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/btn_getcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_btn_getcode"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dimen_4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="获取验证码"
+                android:textColor="@color/new_primary"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_width="match_parent"
+            android:background="@color/bianxian"
+            android:layout_height="@dimen/dimen_1dp"/>
+        <TextView
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/dimen_86dp"
+            android:background="@drawable/selector_primary_btn"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/main_background"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/white"
+            android:text="必须通过手机验证，才能设定用车密码"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <!-- <com.linfaxin.recyclerview.PullRefreshLoadRecyclerView
+         android:id="@+id/pull_refresh_load_recycler_view"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"/>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!--<ImageView-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_width="28dp"-->
+            <!--android:layout_height="28dp"-->
+            <!--android:src="@mipmap/cs_car_ok"/>-->
+
+
+            <!--<TextView-->
+            <!--android:layout_marginTop="@dimen/default_margin_tnb"-->
+            <!--style="@style/TextView_Normal_Black"-->
+            <!--android:text="@string/car_share_return_finish"-->
+            <!--/>-->
+
+            <!--<TextView-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--style="@style/TextView_Normal_Black"-->
+            <!--android:text="@string/car_share_return_thanks"-->
+            <!--/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_tnb"
+                android:layout_marginRight="@dimen/default_margin_tnb"
+                android:background="@mipmap/yc_30"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="35dp"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:paddingTop="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_total_money"
+                        style="@style/TextView_Normal_Black"
+                        android:textColor="@color/main_background"
+                        android:textSize="50sp"
+                        tools:text="8.5" />
+
+                    <TextView
+                        style="@style/TextView_Normal_Black"
+                        android:layout_marginLeft="5dp"
+                        android:text="元"
+                        android:textColor="@color/main_background" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/TextView_Normal_Black"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:text="@string/car_share_return_detail"
+                    android:textColor="@color/main_background"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/layout_licheng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_mile"
+                        style="@style/TextView_Normal_Dark_Gray"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/car_share_return_mile_fee"
+                        android:textColor="@color/text_gray"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_mile_money"
+                        style="@style/TextView_Normal_Dark_Gray"
+                        android:textColor="@color/main_background"
+                        android:textSize="15sp"
+                        tools:text="0元" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        style="@style/TextView_Normal_Dark_Gray"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/car_share_return_time_fee"
+                        android:textColor="@color/text_gray"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_time_money"
+                        style="@style/TextView_Normal_Dark_Gray"
+                        android:textColor="@color/main_background"
+                        android:textSize="15sp"
+                        tools:text="0元" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_driver_money_dianliang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/TextView_Normal_Dark_Gray"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="电量费用"
+                        android:textColor="@color/text_gray"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_driver_money_dianliang"
+                        style="@style/TextView_Normal_Dark_Gray"
+                        android:textColor="@color/main_background"
+                        android:textSize="15sp"
+                        tools:text="0元" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/TextView_Normal_Black"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="服务费用"
+                        android:textColor="@color/main_background"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_driver_money_nuoche"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/TextView_Normal_Dark_Gray"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="挪车费用"
+                        android:textColor="@color/text_gray"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_driver_money_nuoche"
+                        style="@style/TextView_Normal_Dark_Gray"
+                        android:textColor="@color/main_background"
+                        android:textSize="15sp"
+                        tools:text="0元" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:id="@+id/ll_driver_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TextView_Normal_Dark_Gray"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/car_share_driver_fee"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tv_driver_money"
+                        style="@style/TextView_Normal_Dark_Gray"
+                        android:textSize="12dp"
+                        tools:text="广东省广州市" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/TextView_Normal_Dark_Gray"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/car_share_return_total_fee"
+                        android:textColor="@color/main_background"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_total_money_down"
+                        style="@style/TextView_Normal_Dark_Gray"
+                        android:textColor="@color/main_background"
+                        android:textSize="15sp"
+                        tools:text="0元" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/TextView_Normal_Dark_Gray"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/car_share_return_real_fee"
+                        android:textColor="@color/main_background"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_total_money_real"
+                        style="@style/TextView_Normal_Dark_Gray"
+                        android:textColor="@color/main_background"
+                        android:textSize="15sp"
+                        tools:text="0元" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/divider" />
+
+                <TextView
+                    android:id="@+id/tv_car_complete_tip"
+                    style="@style/TextView_Normal_Dark_Gray"
+                    android:layout_gravity="left"
+                    android:drawableLeft="@mipmap/yc_32"
+                    android:drawablePadding="5dp"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:text="提示：消费不满9元，按最低消费9元扣费。"
+                    android:textColor="@color/orange"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_car_complete_vip"
+                    style="@style/TextView_Normal_Dark_Gray"
+                    android:layout_marginTop="5dp"
+                    android:drawableRight="@mipmap/ic_pay_by_others_help_gray"
+                    android:text="(您是本平台的xx会员,享受平台服务特权。本次订单为您优惠x元)"
+                    android:textSize="10dp"
+                    android:visibility="gone" />
+                <!--<Button-->
+                <!--android:id="@+id/tv_car_complete_sure"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/activity_car_share_complete_sure"-->
+                <!--android:text="确认" />-->
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/complete_dikou_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        style="@style/TextView_Normal_Dark_Gray"
+                        android:layout_width="wrap_content"
+                        android:text="本次订单为您优惠"
+                        android:textColor="@color/text_gray"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_total_money_deduct"
+                        style="@style/TextView_Normal_Dark_Gray"
+                        android:textColor="@color/text_gray"
+                        android:textSize="13sp"
+                        tools:text="0元" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/tv_car_complete_sure"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/default_margin_lnr"
+                android:layout_marginRight="@dimen/default_margin_lnr"
+                android:background="@drawable/selector_primary_btn_a"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="确认"
+                android:textColor="@color/main_background"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

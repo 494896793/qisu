@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/carbuy_banner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="25dp"
+                android:text="车辆信息"
+                android:textColor="@color/text_black"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/bianxian" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/carbuy_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="15dp"
+                    android:text="荣威550"
+                    android:textColor="@color/text_black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/carbuy_auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="(自动挡)"
+                    android:textColor="@color/text_gray" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/bg_white" />
+
+                <TextView
+                    android:id="@+id/carbuy_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="15dp"
+                    android:text="参考价:15万"
+                    android:textColor="@color/text_black" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/carbuy_dongliyuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="动力源：纯电动"
+                        android:textColor="@color/text_black" />
+
+                    <TextView
+                        android:id="@+id/carbuy_yanse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="颜色：白"
+                        android:textColor="@color/text_black" />
+
+                    <TextView
+                        android:id="@+id/carbuy_chengshi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="所属城市：深圳"
+                        android:textColor="@color/text_black" />
+
+                    <TextView
+                        android:id="@+id/carbuy_chepaihao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="车牌号：粤16789"
+                        android:textColor="@color/text_black" />
+
+                    <TextView
+                        android:id="@+id/carbuy_xingshizhenghao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="行驶证号：1234****7890"
+                        android:textColor="@color/text_black" />
+
+                    <TextView
+                        android:id="@+id/carbuy_chejiahao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="车驾号：1234****7890"
+                        android:textColor="@color/text_black" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/carbuy_detail_carimg"
+                    android:layout_width="164dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/carbuy_detail_carimg_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="54dp"
+                    android:text="荣威550"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="54dp"
+                    android:visibility="gone"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="投资信息"
+                    android:textColor="@color/text_black"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/bianxian" />
+
+                <TextView
+                    android:id="@+id/carbuy_detail_statue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="状态：投资中"
+                    android:textColor="@color/text_black"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/carbuy_detail_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="投资类型：投资型"
+                    android:textColor="@color/text_black"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/carbuy_detail_buytime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="认购时间：2018-04-01"
+                    android:textColor="@color/text_black"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/carbuy_detail_moneytime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="分红日期：2018-05-01"
+                    android:textColor="@color/text_black"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/carbuy_detail_finishtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="到期时间：2023-04-01"
+                    android:textColor="@color/text_black"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/carbuy_detail_totalmoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="累计收益：10000"
+                    android:textColor="@color/text_black"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/carbuy_detail_hetongstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="合同状态：不可解除(2019-03-10后可解除)"
+                    android:textColor="@color/text_black"
+                    android:textSize="12dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/bianxian" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="15dp"
+                    >
+                    <TextView
+                        android:id="@+id/carbuy_detail_hetongtype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="投资型合同"
+                        />
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/carbuy_detail_xiangqing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看详情"
+                        />
+                    <View
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

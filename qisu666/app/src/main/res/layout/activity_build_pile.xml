@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <ImageView
+        android:id="@+id/iv_banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_service_banner" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_primary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:orientation="vertical"
+                android:padding="@dimen/default_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_charge_info_tag_wnh"
+                        android:layout_height="@dimen/icon_charge_info_tag_wnh"
+                        android:src="@mipmap/ic_charge_tag" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/build_pile_condition"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/text_subtitle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_lnr"
+                    android:layout_marginTop="@dimen/default_margin_tnb"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/text_subtitle"
+                        android:layout_height="@dimen/text_subtitle"
+                        android:src="@mipmap/ic_pay_mode_checked" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/build_pile_condition_1"
+                        android:textSize="@dimen/text_subtitle"
+                        android:textColor="@color/text_black"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="@dimen/default_margin_tnb"
+                    style="@style/Divide_Horizontal_Full"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_lnr"
+                    android:layout_marginTop="@dimen/default_margin_tnb"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/text_subtitle"
+                        android:layout_height="@dimen/text_subtitle"
+                        android:src="@mipmap/ic_pay_mode_checked" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/build_pile_condition_2"
+                        android:textSize="@dimen/text_subtitle"
+                        android:textColor="@color/text_black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_tnb"
+                android:background="@color/bg_white"
+                android:orientation="vertical"
+                android:padding="@dimen/default_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_charge_info_tag_wnh"
+                        android:layout_height="@dimen/icon_charge_info_tag_wnh"
+                        android:src="@mipmap/ic_charge_tag" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/build_pile_procedure"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/text_subtitle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_lnr"
+                    android:layout_marginTop="@dimen/default_margin_tnb"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_build_pile_wnh"
+                        android:layout_height="@dimen/icon_build_pile_wnh"
+                        android:src="@mipmap/ic_build_pile_procedure_1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/default_margin_lnr">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/build_pile_procedure_1"
+                            android:textSize="@dimen/text_subtitle"
+                            android:textColor="@color/text_black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="17dp"
+                            android:text="@string/build_pile_procedure_content_1"
+                            android:textSize="@dimen/text_normal"
+                            android:textColor="@color/text_gray"
+                            android:layout_marginTop="5dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="@dimen/default_margin_tnb"
+                    style="@style/Divide_Horizontal_Full"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_lnr"
+                    android:layout_marginTop="@dimen/default_margin_tnb"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_build_pile_wnh"
+                        android:layout_height="@dimen/icon_build_pile_wnh"
+                        android:src="@mipmap/ic_build_pile_procedure_2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/default_margin_lnr">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/build_pile_procedure_2"
+                            android:textSize="@dimen/text_subtitle"
+                            android:textColor="@color/text_black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="17dp"
+                            android:text="@string/build_pile_procedure_content_2"
+                            android:textSize="@dimen/text_normal"
+                            android:textColor="@color/text_gray"
+                            android:layout_marginTop="5dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="@dimen/default_margin_tnb"
+                    style="@style/Divide_Horizontal_Full"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_lnr"
+                    android:layout_marginTop="@dimen/default_margin_tnb"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_build_pile_wnh"
+                        android:layout_height="@dimen/icon_build_pile_wnh"
+                        android:src="@mipmap/ic_build_pile_procedure_3" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/default_margin_lnr">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/build_pile_procedure_3"
+                            android:textSize="@dimen/text_subtitle"
+                            android:textColor="@color/text_black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="17dp"
+                            android:text="@string/build_pile_procedure_content_3"
+                            android:textSize="@dimen/text_normal"
+                            android:textColor="@color/text_gray"
+                            android:layout_marginTop="5dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_primary_btn_b"
+        android:text="@string/build_pile_submit"
+        android:textColor="@color/text_white"
+        android:textSize="18dp"/>
+
+</LinearLayout>

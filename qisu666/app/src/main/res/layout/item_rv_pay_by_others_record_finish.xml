@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_linear_btn"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="@dimen/default_padding_tnb"
+        android:paddingLeft="@dimen/default_padding_lnr"
+        android:paddingRight="@dimen/default_padding_lnr"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_station_name"
+                style="@style/TextView_Subtitle_Black_Weight"
+                android:textColor="@color/primary"
+                android:text="广州交投中海康城充电站充电站充电站充电站充电站充电站充电站"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016-05-28 14:21"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/text_gray"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="9dp"
+                android:src="@mipmap/ic_right_arrow_black"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/Divide_Horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="@dimen/default_padding_lnr"
+        android:paddingRight="@dimen/default_padding_lnr">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_Subtitle_Black"
+                    android:text="@string/pay_by_others_record_phone" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    style="@style/TextView_Subtitle_Dark_Gray"
+                    android:text="13512345678"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    style="@style/TextView_Subtitle_Black"
+                    android:text="@string/pay_by_others_record_person" />
+
+                <TextView
+                    android:id="@+id/tv_person"
+                    style="@style/TextView_Subtitle_Dark_Gray"
+                    android:text="王六" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    style="@style/TextView_Subtitle_Black"
+                    android:text="@string/pay_by_others_record_payment_amount" />
+
+                <TextView
+                    android:id="@+id/tv_payment_amount"
+                    style="@style/TextView_Subtitle_Dark_Gray"
+                    android:text="￥10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    style="@style/TextView_Subtitle_Black"
+                    android:text="@string/pay_by_others_record_surplus_amount" />
+
+                <TextView
+                    android:id="@+id/tv_surplus_amount"
+                    style="@style/TextView_Subtitle_Dark_Gray"
+                    android:text="￥10" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_Subtitle_Black"
+                    android:text="@string/pay_by_others_record_charging_amount" />
+
+                <TextView
+                    android:id="@+id/tv_charging_amount"
+                    style="@style/TextView_Subtitle_Dark_Gray"
+                    android:text="35度" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    style="@style/TextView_Subtitle_Black"
+                    android:text="@string/pay_by_others_record_duration" />
+
+                <TextView
+                    android:id="@+id/tv_charging_duration"
+                    style="@style/TextView_Subtitle_Dark_Gray"
+                    android:text="00:22:55" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    style="@style/TextView_Subtitle_Black"
+                    android:text="@string/pay_by_others_record_actual_amount" />
+
+                <TextView
+                    android:id="@+id/tv_actual_amount"
+                    style="@style/TextView_Subtitle_Dark_Gray"
+                    android:text="￥10" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/bg_primary"/>
+
+</LinearLayout>

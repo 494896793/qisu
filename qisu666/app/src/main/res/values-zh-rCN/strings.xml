@@ -1,0 +1,591 @@
+<resources>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="app_name">奇速共享</string>
+
+
+    <!--****************** 界面内容 *******************-->
+
+    <!--App-->
+    <string name="app_cancel">取消</string>
+    <string name="app_confirm">确定</string>
+    <string name="app_next_step">下一步</string>
+    <string name="app_save">保存</string>
+    <string name="app_delete">删除</string>
+    <string name="app_submit">提交</string>
+
+    <!--主界面 MainActivity-->
+
+    <!--首页 HomeFragment-->
+    <string name="home_title">奇速服务</string>
+    <string name="item_station_map">桩点地图</string>
+    <string name="item_share_charge">共享充电</string>
+    <string name="item_share_car">共享汽车</string>
+    <string name="item_nearby_station">附近电站</string>
+    <string name="item_nearby_car">附近车辆</string>
+    <string name="item_latest_charge">最近充电</string>
+    <string name="item_my_collection">我的收藏</string>
+    <string name="home_charge_now">立即充电</string>
+    <string name="home_is_charging">正在充电</string>
+    <string name="item_partner">合伙人</string>
+
+    <!--服务 ServiceFragment-->
+    <string name="service_title">我的订单</string>
+    <string name="service_charge_service">充电服务</string>
+    <string name="service_my_service">我的服务</string>
+    <string name="service_share_station">分享充电桩</string>
+    <string name="service_diy_station">我要做桩主</string>
+    <string name="service_is_building">建设中</string>
+    <string name="service_user_service">客户服务</string>
+    <string name="service_phone_num">服务热线</string>
+    <string name="service_wechat">微信在线</string>
+
+    <!--个人 UserFragment-->
+    <string name="user_title">个人中心</string>
+    <string name="user_account">我的账户</string>
+    <string name="user_comm_user">游客</string>
+    <string name="user_not_login">未登录</string>
+    <string name="user_balance">余额</string>
+    <string name="user_balance_content">0.00</string>
+    <string name="user_recharge">充值</string>
+    <string name="user_bill">账单</string>
+    <string name="user_my_pocket">我的钱包</string>
+    <string name="user_deposit_charge">开通会员</string>
+    <string name="user_coupon">优惠券</string>
+    <string name="user_charging_record">充电记录</string>
+    <string name="user_mytrip">我的行程</string>
+
+    <string name="user_transaction_record">交易记录</string>
+    <string name="user_payment_pwd">支付密码</string>
+    <string name="user_operation_flow">操作流程</string>
+    <string name="user_pay_by_others">代付管理</string>
+    <string name="user_my_travel">我的行程</string>
+    <string name="user_book_tips">租车指南</string>
+    <string name="user_book_investor">我的认购</string>
+    <string name="user_notify">系统消息</string>
+    <string name="user_pay_myself">自费说明</string>
+    <string name="user_option">设置</string>
+
+    <!--设置 SettingActivity-->
+    <string name="setting_login">登录/注册</string>
+    <string name="setting_exit">退出登录</string>
+
+    <!--个人信息 PersonalInfoActivity-->
+    <string name="personal_info_title">个人信息</string>
+    <string name="personal_portrait">头像</string>
+    <string name="personal_alias">昵称</string>
+    <string name="personal_alias_default">135****4567</string>
+    <string name="personal_gender">性别</string>
+    <string name="personal_gender_default">保密</string>
+    <string name="personal_gender_male">男</string>
+    <string name="personal_gender_female">女</string>
+    <string name="personal_phone">手机号码</string>
+    <string name="personal_phone_default">13512334567</string>
+    <string name="personal_verify_car_owner">认证车主</string>
+    <string name="personal_certified">已认证</string>
+    <string name="personal_not_certified">未认证</string>
+    <string name="personal_modify_pwd">修改密码</string>
+    <string name="personal_camera">拍照上传</string>
+    <string name="personal_local">本地图片上传</string>
+
+    <!--更换头像 ModifyPortraitActivity-->
+    <string name="modify_portrait_title">更换头像</string>
+
+    <!--充电记录 ChargingRecordFragment-->
+    <string name="charging_record_title">充电记录</string>
+    <string name="charging_record_payment_amount">支付金额：</string>
+    <string name="charging_record_actual_amount">实付金额：</string>
+    <string name="charging_record_return_amount">剩余金额：</string>
+    <string name="charging_record_charging_amount">充电电量：</string>
+    <string name="charging_record_charging_duration">充电时长：</string>
+
+    <!--充电统计 ChargingStatisticsFragment-->
+    <string name="charging_statistics_title">充电统计</string>
+    <string name="charging_statistics_charging_total">充电总量</string>
+    <string name="charging_statistics_charging_times">充电总次数</string>
+    <string name="charging_statistics_charging_average">平均每次充电量</string>
+
+    <!--充电详情 ChargingDetailActivity-->
+    <string name="charging_detail_terminal_no">终端编号:</string>
+    <string name="charging_detail_charging_detail">充电详情</string>
+    <string name="charging_detail_payment_amount">支付金额</string>
+    <string name="charging_detail_charging_amount">充电电量</string>
+    <string name="charging_detail_charging_duration">充电时长</string>
+    <string name="charging_detail_charging_time">充电时间</string>
+    <string name="charging_detail_start_time">开始时间：</string>
+    <string name="charging_detail_end_time">结束时间：</string>
+    <string name="charging_detail_charge_standard">各时段充电详情/收费标准</string>
+    <string name="charging_detail_consumption_amount">用电量：</string>
+    <string name="charging_detail_electricity_fee">电&#160;&#160;&#160;&#160;费：</string>
+    <string name="charging_detail_service_fee">服务费：</string>
+
+    <!--修改昵称 ModifyAliasActivity-->
+    <string name="modify_alias_title">修改昵称</string>
+    <string name="modify_alias_hint">请输入昵称</string>
+
+    <!--操作流程 OperationFlowActivity-->
+    <string name="operation_flow_title">操作流程</string>
+    <string name="operation_flow_subtitle_1">扫二维码充电</string>
+    <string name="operation_flow_content_1">1、请将充电枪连接到您的车，点击首页中的“立即充电”按钮，进入到“扫码充电”页面，对准终端上的二维码扫一扫即可。</string>
+    <string name="operation_flow_subtitle_2">输入终端编号充电</string>
+    <string name="operation_flow_content_2">2、请将充电枪连接到您的车，点击“输入终端编号充电”按钮，输入设备上的终端编号后提交即可。</string>
+
+    <!--车辆信息 CarInfoActivity-->
+    <string name="car_info_title">我的车辆</string>
+
+    <!--添加车辆信息 AddCarInfoActivity-->
+    <string name="add_car_info_title">车辆信息</string>
+    <string name="add_car_info_brand">品牌车型</string>
+    <string name="add_car_info_brand_hint">选择品牌</string>
+    <string name="add_car_info_license_no">车牌号</string>
+    <string name="add_car_info_license_no_hint">请输入</string>
+
+    <!--选择动力类型 ChoosePowerActivity-->
+    <string name="choose_power_title">选择动力类型</string>
+
+    <!--选择品牌 ChooseBrandActivity-->
+    <string name="choose_brand_title">选择品牌</string>
+
+    <!--选择车型 ChooseBrandTypeActivity-->
+    <string name="choose_brand_type_title">选择车型</string>
+
+    <!--二维码扫描相关-->
+    <string name="scan_text">将二维码对准方框，即可自动扫描</string>
+
+    <!--充电站信息 StationInfoActivity-->
+    <string name="station_info_open_time">开放时间：</string>
+    <string name="station_info_phone">400-7569999</string>
+    <string name="station_info_SOC">(SOC:</string>
+    <string name="station_info_navi">地图导航</string>
+    <string name="station_info_charging_fee">当前电费：</string>
+    <string name="station_info_parking_fee">停车费：</string>
+    <string name="station_info_service_fee">服务费：</string>
+    <string name="station_info_detail">详情</string>
+    <string name="station_info_parking">车位</string>
+    <string name="station_info_comment">评论</string>
+    <string name="station_info_no">编&#160;&#160;&#160;&#160;号：</string>
+    <string name="station_info_start_navi">导航</string>
+    <string name="station_info_amap">高德地图</string>
+    <string name="station_info_baidu">百度地图</string>
+
+    <!--分享充电桩 ShareChargingActivity-->
+    <string name="share_charging_title">充电桩定位</string>
+    <string name="share_charging_search">输入充电点位置/拖动地图确定图钉位置</string>
+    <string name="share_charging_lat">经度：</string>
+    <string name="share_charging_lng">纬度：</string>
+    <string name="share_charging_submit">确定位置</string>
+    <string name="share_charging_loading">正在定位...</string>
+
+    <!--分享充电桩类型 ShareChargingTypeActivity-->
+    <string name="share_charging_type_title">分享充电桩</string>
+    <string name="share_charging_type_private">分享个人充电桩</string>
+    <string name="share_charging_type_public">分享公共充电桩</string>
+    <string name="share_charging_type_private_prompt">分享个人充电桩，与车友共享新能源，参与分润的同时，参与绿色出行。</string>
+    <string name="share_charging_type_public_prompt">分享已有的公共充电桩信息，共同完善充电地图，助力绿色出行。</string>
+
+    <!--位置搜索 PoiSearchActivity-->
+    <string name="poi_search_title">位置搜索</string>
+    <string name="poi_search_search_hint">搜索地址</string>
+
+    <!--筛选 ChargingFilterActivity-->
+    <string name="charging_filter_title">筛选</string>
+    <string name="charging_filter_interface">充电接口</string>
+    <string name="charging_filter_all">全部</string>
+    <string name="charging_filter_interface_1">国标</string>
+    <string name="charging_filter_interface_2">特斯拉</string>
+    <string name="charging_filter_carr">运营商</string>
+    <string name="charging_filter_carr_1">自营</string>
+    <string name="charging_filter_carr_2">非自营</string>
+    <string name="charging_filter_mode">充电方式</string>
+    <string name="charging_filter_mode_1">快充</string>
+    <string name="charging_filter_mode_2">慢充</string>
+    <string name="charging_filter_type">桩点类型</string>
+    <string name="charging_filter_type_1">公共桩</string>
+    <string name="charging_filter_type_2">个人桩</string>
+    <string name="charging_filter_is_void">是否空闲</string>
+    <string name="charging_filter_with_gun">带充电枪</string>
+    <string name="charging_filter_free_parking">免费停车</string>
+    <string name="charging_filter_all_day">全时段开放</string>
+
+    <!--桩点地图 StationMapActivity-->
+    <string name="station_map_tips">图标内数字表示该站点空闲充电桩数量</string>
+    <string name="station_map_title">桩点地图</string>
+    <string name="station_list_title">桩点列表</string>
+
+
+    <!--支付界面 PayActivity-->
+    <string name="pay_title">支付</string>
+    <string name="pay_direct">实时支付</string>
+    <string name="pay_account">账户支付</string>
+    <string name="pay_others">他人代付</string>
+    <string name="pay_select_amount">请选择金额</string>
+    <string name="pay_select_amount_1">10元</string>
+    <string name="pay_select_amount_2">20元</string>
+    <string name="pay_select_amount_3">30元</string>
+    <string name="pay_custom_amount">自定义金额</string>
+    <string name="pay_mode">支付方式</string>
+    <string name="pay_wxpay">微信支付</string>
+    <string name="pay_alipay">支付宝</string>
+    <string name="pay_prompt">如果电量已充满或因其他意外情况而停止充电，导致充电未完成，系统会退回剩余充电金额到您的支付账户。</string>
+    <string name="pay_select_others">选择代付人</string>
+    <string name="pay_select_others_hint">请选择代付人</string>
+    <string name="pay_tips">请选择充值金额</string>
+    <string name="pay_fee">到账金额</string>
+
+    <!--建桩界面 BuildPileActivity-->
+    <string name="build_pile_title">建桩</string>
+    <string name="build_pile_condition">建桩条件</string>
+    <string name="build_pile_condition_1">您自有停车场地或可以介绍场地。</string>
+    <string name="build_pile_condition_2">车位对外开放，有电力接口且电容足够。</string>
+    <string name="build_pile_procedure">建桩步骤</string>
+    <string name="build_pile_procedure_1">1.&#160;客服确认</string>
+    <string name="build_pile_procedure_content_1">确认是否满足建桩条件。</string>
+    <string name="build_pile_procedure_2">2.&#160;运营商对接</string>
+    <string name="build_pile_procedure_content_2">对现场进行勘察并提出方案。</string>
+    <string name="build_pile_procedure_3">3.&#160;签订协议</string>
+    <string name="build_pile_procedure_content_3">贯彻落实充电桩的施工。</string>
+    <string name="build_pile_submit">我要做桩主</string>
+
+    <!--终端详情 DeviceDetailActivity-->
+    <string name="device_detail_title">终端详情</string>
+    <string name="device_detail_station_name">电站名称</string>
+    <string name="device_detail_no">终端编号</string>
+    <string name="device_detail_interface">充电接口</string>
+    <string name="device_detail_type">终端类型</string>
+    <string name="device_detail_state">终端状态</string>
+    <string name="device_detail_charge_detail">收费详情</string>
+    <string name="device_detail_charging">立即充电</string>
+
+    <!--正在连接 ConnectionActivity-->
+    <string name="connection_title">正在连接</string>
+    <string name="connection_failure">连接失败</string>
+    <string name="connection_failure_prompt">真遗憾！未获取到充电桩信息...</string>
+    <string name="connection_without_insert_prompt">连接失败，请插入充电枪后重试！</string>
+    <string name="connection_reconnection">重新连接</string>
+    <string name="connection_without_insert">确认插枪</string>
+
+    <!--关于我们 AboutActivity-->
+    <string name="about_content">奇速共享是一家专注于国家战略新能源产业的产品开发、实业投资及互联网运营的高科技企业。\n公司核心业务包括：电动汽车充电桩研发、生产、销售、运营；新能源充电设施运营及EPC综合解决方案；共享充电设施研发、生产、销售和运营；光伏柔性支架应用解决方案；储能产品设计、研发与技术服务；汽车分时租赁等。</string>
+
+    <!--充电中 ChargingActivity-->
+    <string name="charging_share">分享给朋友</string>
+    <string name="sina">新浪微博</string>
+    <string name="wechat">微信好友</string>
+    <string name="wxcircle">朋友圈</string>
+    <string name="qq">QQ</string>
+    <string name="qzone">QQ空间</string>
+
+    <!--导航-->
+    <string name="preference_default_tts_role">xiaoyan</string>
+    <string name="preference_key_tts_speed">tts_speed</string>
+    <string name="preference_title_tts_speed">语速</string>
+    <string name="preference_default_tts_speed">50</string>
+    <string name="preference_dialog_title_tts_speed">选择语速</string>
+    <string name="preference_key_tts_volume">tts_volume</string>
+    <string name="preference_title_tts_volume">音量</string>
+    <string name="preference_default_tts_volume">50</string>
+    <string name="preference_dialog_title_tts_volume">选择音量</string>
+    <string name="preference_key_tts_pitch">tts_pitch</string>
+    <string name="preference_title_tts_pitch">语调</string>
+    <string name="preference_default_tts_pitch">50</string>
+    <string name="intell_bd_title">智能播报</string>
+
+    <!--金牌会员充值 AnnualFeeActivity-->
+    <string name="annual_title">金牌会员</string>
+    <string name="annual_type">付款模式</string>
+    <string name="annual_validity">按年付费</string>
+    <string name="annual_amount">应付金额</string>
+    <string name="annual_tip">开通会员享受充电服务费9折优惠，会员到期前不可退订。</string>
+
+    <!--充值 RechargeActivity-->
+    <string name="recharge_title">充值</string>
+    <string name="recharge_account_balance">账户余额</string>
+    <string name="recharge_amount">充值金额</string>
+    <string name="recharge_amount_hint">请输入充值金额（小于10000元）</string>
+    <string name="recharge_submit">立即充值</string>
+
+    <!--账单 BillActivity-->
+    <string name="bill_title">账单</string>
+    <string name="bill_balance">余额：</string>
+    <string name="bill_wx">微信充值</string>
+    <string name="bill_ali">支付宝充值</string>
+    <string name="bill_refund">后台充值</string>
+    <string name="bill_consume">充电消费</string>
+    <string name="bill_consume_by_other">代付消费</string>
+    <string name="bill_refund_by_other">代付退款</string>
+    <string name="bill_dian_return">电费返还</string>
+    <string name="bill_car">用车消费</string>
+
+    <!--修改密码 BillActivity-->
+    <string name="mpwd_old">旧密码</string>
+    <string name="mpwd_input">新密码</string>
+    <string name="mpwd_reinput">确认密码</string>
+    <string name="mpwd_old_hint">请输入原密码</string>
+    <string name="mpwd_input_hint">请输入新密码</string>
+    <string name="mpwd_reinput_hint">请再次输入新密码</string>
+
+    <!--系统消息 NotificationActivity-->
+    <string name="notification_title">消息中心</string>
+
+    <!--充电完成 FinishChargingActivity-->
+    <string name="finish_charging_terminal_no">终端编号：</string>
+    <string name="finish_charging_charging_fee">电费：</string>
+    <string name="finish_charging_service_fee">服务费：</string>
+    <string name="finish_charging_item_1">充电费用</string>
+    <string name="finish_charging_item_2">已充电量</string>
+    <string name="finish_charging_item_3">已充时长</string>
+    <string name="finish_charging_item_4">退回金额</string>
+    <string name="finish_charging_item_5">完成时间</string>
+    <string name="finish_charging_item_6">SOC</string>
+    <string name="finish_charging_item_7">优惠金额</string>
+    <string name="comment_title">评价</string>
+    <string name="finish_charging_prompt_1">感谢您！本次充电又为地球节省了</string>
+    <string name="finish_charging_prompt_2">汽油，</string>
+    <string name="finish_charging_prompt_3">二氧化碳</string>
+    <string name="finish_charging_share_btn">晒一晒</string>
+
+    <!--代付管理 PayByOthersActivity-->
+    <string name="pay_by_others_title">代付管理</string>
+    <string name="pay_by_others_manage">被代付人管理</string>
+    <string name="pay_by_others_record">代付记录</string>
+
+    <!--被代付人管理 PayByOthersRecordActivity-->
+    <string name="pay_by_others_manage_title">被代付人管理</string>
+
+    <!--新增被代付人 PayByOthersManageAddActivity-->
+    <string name="pay_by_others_manage_add_title">新增被代付人</string>
+    <string name="pay_by_others_manage_add_phone">手机号</string>
+    <string name="pay_by_others_manage_add_phone_hint">请输入手机号码</string>
+    <string name="pay_by_others_manage_add_name">姓　名</string>
+    <string name="pay_by_others_manage_add_name_hint">请输入姓名</string>
+
+    <!--代付记录 PayByOthersRecordActivity-->
+    <string name="pay_by_others_record_title">代付记录</string>
+    <string name="pay_by_others_record_paying">代付中</string>
+    <string name="pay_by_others_record_finish">已完成</string>
+    <string name="pay_by_others_record_phone">手机号码：</string>
+    <string name="pay_by_others_record_charging_amount">充电电量：</string>
+    <string name="pay_by_others_record_person">被代付人：</string>
+    <string name="pay_by_others_record_duration">充电时长：</string>
+    <string name="pay_by_others_record_payment_amount">代付金额：</string>
+    <string name="pay_by_others_record_actual_amount">实际金额：</string>
+    <string name="pay_by_others_record_surplus_amount">剩余金额：</string>
+
+
+    <!--****************** toast提示内容 *******************-->
+    <!--操作提示-->
+    <string name="toast_prompt_double_click_exit">再次点击返回键退出应用</string>
+    <string name="toast_prompt_login">请先登录</string>
+    <string name="toast_prompt_clear_cache">清除缓存成功</string>
+    <string name="toast_prompt_scan_failed">扫描失败</string>
+    <string name="toast_prompt_copy">已复制到剪贴板</string>
+    <string name="toast_apply_protocol">请同意《奇速共享注册协议》</string>
+
+    <!--数据校验-->
+    <string name="toast_add_car_info_no_brand">请先选择车辆品牌</string>
+    <string name="toast_add_car_info_no_licence">请填写车辆牌号</string>
+    <string name="toast_phone_is_null">请输入手机号码</string>
+    <string name="toast_phone_length_illegal">请输入真实有效的手机号码</string>
+    <string name="toast_pwd_is_null">请输入密码</string>
+    <string name="toast_pwd_old_is_null">请输入旧密码</string>
+    <string name="toast_pwd_new_is_null">请输入新密码</string>
+    <string name="toast_pwd_illegal">密码只能包含字母和数字</string>
+    <string name="toast_pwd_length_illegal">密码位数须在6到16之间</string>
+    <string name="toast_pwd_not_same">两次输入的密码不一致</string>
+    <string name="toast_code_is_null">请输入验证码</string>
+    <string name="toast_code_length_illegal">请输入6位验证码</string>
+    <string name="toast_alias_same">新昵称不能与旧昵称相同</string>
+    <string name="toast_alias_is_null">昵称不能为空</string>
+    <string name="toast_device_no_is_null">请输入终端序列号</string>
+    <string name="toast_name_is_null">请输入姓名</string>
+
+    <!--请求响应-->
+    <string name="toast_A103">注册成功,正在为您自动登录</string>
+    <string name="toast_A104">验证码已发送</string>
+    <string name="toast_A105">重置密码成功</string>
+    <string name="toast_A109">修改头像成功</string>
+    <string name="toast_B101">修改昵称成功</string>
+    <string name="toast_B103">修改密码成功</string>
+    <string name="toast_B104">添加车辆信息成功</string>
+    <string name="toast_B105">分享充电桩成功</string>
+    <string name="toast_B106">提交桩主信息成功</string>
+    <string name="toast_B108">删除车辆信息成功</string>
+    <string name="toast_D104">收藏成功</string>
+    <string name="toast_D106">取消收藏成功</string>
+    <string name="toast_D107_failed">终端序列号不存在，请重新扫描或手动输入</string>
+    <string name="toast_E106_order_state_03">订单正在结算中，请稍后再试</string>
+    <string name="toast_I103">添加被代付人成功</string>
+    <string name="toast_I105">删除被代付人成功</string>
+
+    <!--支付相关-->
+    <string name="toast_pay_success">支付成功</string>
+    <string name="toast_pay_wxpay_get_order_failed">获取支付订单失败</string>
+    <string name="toast_pay_cancel">订单取消成功</string>
+    <string name="toast_pay_amount_is_null">支付金额不能为空</string>
+    <string name="toast_pay_amount_illegal">支付金额须在1元至10000元之间</string>
+    <string name="toast_pay_paying_agent_is_null">请选择代付人</string>
+
+    <string name="toast_pay_recharge_success">充值成功</string>
+    <string name="toast_pay_recharge_amount_is_null">充值金额不能为空</string>
+    <string name="toast_pay_recharge_amount_illegal">充值金额须在1元至10000元之间</string>
+
+    <!--地图相关-->
+    <string name="toast_map_search_no_data">很抱歉，没有搜索到相关数据</string>
+    <string name="toast_map_search_keyword_is_null">请输入搜索关键字</string>
+    <string name="toast_map_regeocode_no_data">很抱歉，无法获取该地址信息</string>
+    <string name="toast_map_location_failed">定位失败，</string>
+
+    <!--权限相关-->
+    <string name="toast_permission_camera">摄像头访问受限，请在权限设置中打开该权限</string>
+    <string name="toast_permission_location">定位失败，请在应用设置中打开定位权限</string>
+
+    <!--网络异常-->
+    <string name="toast_network_interrupt">网络异常，请检查您的网络连接</string>
+    <string name="toast_network_airplane">网络异常，请关闭飞行模式</string>
+    <string name="toast_network_server_outage">服务器繁忙，请稍后再试</string>
+
+    <!--调用其他应用-->
+    <string name="toast_app_uninstall_baidu">请安装百度地图后重试</string>
+    <string name="toast_app_uninstall_wx">请安装微信客户端后重试</string>
+
+
+    <!--****************** dialog提示内容 *******************-->
+    <!--操作提示-->
+    <string name="dialog_prompt_reset_filter">确认重置选项？</string>
+    <string name="dialog_prompt_unfinished_service">更多服务，敬请期待…</string>
+    <string name="dialog_prompt_charge_finish">充电结束，欢迎您再次充电！</string>
+    <string name="dialog_prompt_stop_charge">是否确认停止充电？</string>
+    <string name="dialog_prompt_cancel_charge">确定要取消充电吗？（取消后退款会退回到您的支付账户）</string>
+    <string name="dialog_prompt_exit_login">是否退出登录？</string>
+    <string name="dialog_prompt_not_insert_gun">请插入充电枪后点击确定</string>
+    <string name="dialog_prompt_clear_cache">清除缓存可能导致程序运行变慢，确认要清除吗？</string>
+    <string name="dialog_prompt_charging_owner">确认您的充电桩在该位置上么？</string>
+    <string name="dialog_prompt_share_charging">确认分享该坐标的充电站？</string>
+    <string name="dialog_prompt_delete_car_info">确定要删除车辆信息吗？</string>
+    <string name="dialog_prompt_delete_be_paying_agent">确定要删除该被代付人么？</string>
+
+    <!--请求响应-->
+    <string name="dialog_D101_no_data">附近没有符合条件的充电桩</string>
+
+    <!--地图相关-->
+    <string name="dialog_loading">正在加载中...</string>
+    <string name="dialog_map_location">正在定位中...</string>
+    <string name="dialog_map_exit_navi">确认退出导航？</string>
+
+    <!--支付相关-->
+    <string name="dialog_pay_failed">支付失败</string>
+    <string name="dialog_pay_alipay_8000">支付结果确认中</string>
+
+    <!--调用其他应用-->
+    <string name="dialog_app_wx_version_is_too_old">该微信版本不支持微信支付</string>
+
+    <!--版本信息-->
+    <string name="dialog_version_min">您的app版本过低，请前往应用商店下载最新版本。</string>
+    <string name="dialog_version_last">当前有新版本可用，是否更新？</string>
+    <string name="dialog_version_confirm">立即更新</string>
+    <string name="dialog_version_confirm_update">前往更新</string>
+    <string name="dialog_version_cancel">以后再说</string>
+
+    <!--写评论 CommentActivity-->
+    <string name="comment_hint">亲，分享一下充电过程中的感受吧</string>
+    <string name="comment_empty">亲，你还没输入评论内容呢！</string>
+    <string name="comment_success">评论成功！</string>
+
+    <!--帮助信息-->
+    <string name="dialog_pay_by_others_help_1_title">代付说明</string>
+    <string name="dialog_pay_by_others_help_1">
+        被代付人管理\n用户自己“张三”，可新增，删除被代付人信息，例如新增了被代付人“李四”；已新增的被代付人“李四”可在使用APP时，点击“立即充电”后，选择支付方式的时候，选择“他人支付”，可选择将“张三”为自己（“李四”）代付。\n\n代付记录\n可查看选择自己代付的代付充电记录，分为“进行中”和“已完成”两种情况的代付记录。“进行中”的记录表示正在充电的未结算的信息。“已完成”的记录表示已完成充电并结算的信息。
+    </string>
+    <string name="dialog_pay_by_others_help_2_title">他人代付</string>
+    <string name="dialog_pay_by_others_help_2">可在“选择代付人”下拉选项框中选择某人为自己代为支付此次的充电费用。</string>
+
+    <!--共享汽车-->
+    <string name="car_share_all_car">全部车辆</string>
+    <string name="car_share_two_car">两座</string>
+    <string name="car_share_five_car">五座</string>
+    <string name="car_share_cancel_book">取消预约</string>
+    <string name="car_share_get_car">取车</string>
+    <string name="car_share_bee">鸣笛找车</string>
+    <string name="car_share_open">开门</string>
+    <string name="car_share_lock">锁门</string>
+    <string name="car_share_return">推荐还车网点</string>
+    <string name="car_share_take_photo">拍照上传</string>
+    <string name="car_share_get_photo">本地图片上传</string>
+
+    <!--确认用车-->
+    <string name="car_share_number">车牌</string>
+    <string name="car_share_ele_level">电量</string>
+    <string name="car_share_distant">续航里程</string>
+    <string name="car_share_service_fee">保养服务费</string>
+    <string name="car_share_one_fee">(1公里内免费)</string>
+    <string name="car_share_confirm_use">确认用车(预约保留30分钟)</string>
+
+    <!--锁门还车-->
+    <string name="car_share_return_place">还车网点</string>
+    <string name="car_share_return_ok">确认锁门还车</string>
+
+    <!--押金充值-->
+    <string name="car_share_deposit_pay">充值金额</string>
+    <string name="car_share_deposit_tip">保证金在完成订单后可随时申请退回</string>
+    <string name="car_share_deposit_go">去充值</string>
+
+    <!--我的钱包-->
+    <string name="car_share_pocket_use_left">可用余额</string>
+    <string name="car_share_pocket_left">账户余额</string>
+    <string name="car_share_pocket_return">退回保证金</string>
+    <string name="car_share_pocket_tip">自用车结束之日起，--个工作日内退到您的账户</string>
+    <string name="car_share_pocket_charge">充值</string>
+
+    <!--行程-->
+    <string name="car_share_route_detail">账单明细</string>
+
+    <!--行程结束-->
+    <string name="car_share_return_finish">还车成功</string>
+    <string name="car_share_return_thanks">感谢您使用奇速共享</string>
+    <string name="car_share_return_detail">消费明细</string>
+    <string name="car_share_return_mile_fee">里程费（5公里）</string>
+    <string name="car_share_return_time_fee">时长费（25分钟）</string>
+    <string name="car_share_driver_fee">代驾费用</string>
+    <string name="car_share_return_total_fee">总计费用</string>
+    <string name="car_share_return_real_fee">实付款</string>
+    <string name="car_share_return_deduct">本次抵扣金额</string>
+
+    <!--还车-->
+    <string name="car_share_return_car_sure">确认完毕</string>
+    <string name="car_share_return_car_tip">请确认以下信息</string>
+    <string name="car_share_close_light">关车灯</string>
+    <string name="car_share_close_window">关车窗</string>
+    <string name="car_share_p_exactly">规范停车</string>
+    <string name="car_share_with_rubbish">带走垃圾</string>
+
+    <!--身份认证-->
+    <string name="car_share_confirm_identity_real_name">姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名:</string>
+    <string name="car_share_confirm_identity_license_num">驾驶证号:</string>
+    <string name="car_share_confirm_identity_hint_name">请输入您的真实姓名</string>
+    <string name="car_share_confirm_identity_id_name">身份证号:</string>
+    <string name="car_share_confirm_identity_hint_id">请输入您的身份证号</string>
+    <string name="car_share_confirm_identity_driver_num">档案编号:</string>
+    <string name="car_share_confirm_identity_hint_driver">请输入驾驶证档案号</string>
+    <string name="car_share_confirm_identity_hint_license_num">请输入驾驶证号</string>
+    <string name="car_share_confirm_identity_id_tips">请按照范例上传本人的证件 (如身份证照片)</string>
+    <string name="car_share_confirm_identity_driver_tips">请按照范例上传本人的证件 (如驾驶证照片)</string>
+    <string name="car_share_confirm_identity_tip_1">1.证件正面照片</string>
+    <string name="car_share_confirm_identity_tip_2">2.证件背面照片</string>
+    <string name="car_share_confirm_identity_submit">确认提交</string>
+
+    <!--故障报备-->
+    <string name="car_share_report_bad_car_tip">发现故障车辆(必填)</string>
+    <string name="car_share_report_bad_type_tip">选择故障类型(必填,可多选)</string>
+    <string name="car_share_report_bad_ps_tip">备注(必填)</string>
+    <string name="car_share_report_bad_hint_ps">请输入不少于10个字的描述</string>
+    <string name="car_share_report_bad_hint_photo">请提供相关问题的截图或照片(选填)</string>
+
+    <string name="car_share_guide">租车指南</string>
+    <string name="pin_hint">请设置六位密码</string>
+    <string name="pin_hint_confirm">请再次输入六位密码以确认密码</string>
+    <string name="pin_hint_confirm_fail">两次输入密码不一致，请重新设置</string>
+    <string name="pin_check_hint">请输入设置的六位密码</string>
+    <string name="max_error_pwd">您已多次输入错误密码，请前往重置密码</string>
+
+</resources>

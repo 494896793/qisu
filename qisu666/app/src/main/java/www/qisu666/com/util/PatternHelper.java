@@ -1,0 +1,146 @@
+package www.qisu666.com.util;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.text.TextUtils;
+import android.util.Log;
+
+import java.util.List;
+
+import www.qisu666.common.constant.Constant;
+
+/**
+ * @author hsg
+ * @date 14/10/2017
+ */
+
+public class PatternHelper {
+    public static final int MAX_SIZE = 4;
+    public static final int MAX_TIMES = 3;
+
+    private String message;
+    private String storagePwd;
+    private String tmpPwd;
+    private int times;
+    private boolean isFinish;
+    private boolean isOk;
+    private Context mContext;
+
+    public PatternHelper(Context context) {
+        this.mContext = context;
+    }
+
+    public void validateForSetting(List<Integer> hitList) {
+        this.isFinish = false;
+        this.isOk = false;
+
+        if ((hitList == null) || (hitList.size() < MAX_SIZE)) {
+            this.tmpPwd = null;
+            this.message = getSizeErrorMsg();
+            return;
+        }
+
+        //1. draw first time
+        if (TextUtils.isEmpty(this.tmpPwd)) {
+            this.tmpPwd = convert2String(hitList);
+            this.message = getReDrawMsg();
+            this.isOk = true;
+            return;
+        }
+
+        //2. draw second times
+        if (this.tmpPwd.equals(convert2String(hitList))) {
+
+            this.message = getSettingSuccessMsg();
+            saveToStorage(this.tmpPwd);
+            this.isOk = true;
+            this.isFinish = true;
+        } else {
+            this.tmpPwd = null;
+            this.message = getDiffPreErrorMsg();
+        }
+    }
+
+    public void validateForChecking(List<Integer> hitList) {
+        this.isOk = false;
+
+        if ((hitList == null) || (hitList.size() < MAX_SIZE)) {
+            this.times++;
+            this.isFinish = this.times >= MAX_TIMES;
+            this.message = getPwdErrorMsg();
+            return;
+        }
+
+        this.storagePwd = getFromStorage();
+        Log.e("asd", "storagePwd:" + storagePwd);
+        if (!TextUtils.isEmpty(this.storagePwd) && this.storagePwd.equals(convert2String(hitList))) {
+            this.message = getCheckingSuccessMsg();
+            this.isOk = true;
+            this.isFinish = true;
+        } else {
+            this.times++;
+            this.isFinish = this.times >= MAX_TIMES;
+            this.message = getPwdErrorMsg();
+        }
+    }
+
+    public String getMessage() {
+        return this.message;
+    }
+
+    public boolean isFinish() {
+        return isFinish;
+    }
+
+    public boolean isOk() {
+        return isOk;
+    }
+
+    private String getReDrawMsg() {
+        return "请再次绘制解锁图案";
+    }
+
+    private String getSettingSuccessMsg() {
+        return "手势解锁图案设置成功！";
+    }
+
+    private String getCheckingSuccessMsg() {
+        return "解锁成功！";
+    }
+
+    @SuppressLint("DefaultLocale")
+    private String getSizeErrorMsg() {
+        return String.format("至少连接个%d点，请重新绘制", MAX_SIZE);
+    }
+
+    private String getDiffPreErrorMsg() {
+        return "与上次绘制不一致，请重新绘制";
+    }
+
+    @SuppressLint("DefaultLocale")
+    private String getPwdErrorMsg() {
+        return String.format("密码错误，还剩%d次机会", getRemainTimes());
+    }
+
+    private String convert2String(List<Integer> hitList) {
+        return hitList.toString();
+    }
+
+    private void saveToStorage(String gesturePwd) {
+        Log.e("asd", "01258:" + gesturePwd);
+//        final String encryptPwd = SecurityUtil.encrypt(gesturePwd);
+        SPUtil.put(mContext, Constant.GESTURE_PWD_KEY, gesturePwd);
+    }
+
+    private String getFromStorage() {
+        final String result = (String) SPUtil.get(mContext, Constant.GESTURE_PWD_KEY, "");
+        Log.e("asd", "result:" + result);
+        return result;
+    }
+
+    private int getRemainTimes() {
+        return (times < 3) ? (MAX_TIMES - times) : 0;
+    }
+
+
+}

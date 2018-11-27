@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical"
+    tools:context="www.qisu666.com.live.LiveResultActivity">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <!--<FrameLayout-->
+
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:background="@color/bg_white">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/img_result"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:src="@mipmap/live_photo" />-->
+    <!--</FrameLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/content_bg">
+
+        <ImageView
+            android:id="@+id/gg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/yc_33" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gg"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:text="首次用车，必须通过活脸认证，设定用车密码"
+            android:textColor="@color/text_white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fl_face"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/default_margin_lnr"
+        android:layout_marginRight="@dimen/default_margin_lnr"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selector_primary_btn_a"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="前往认证"
+        android:textColor="@color/main_background"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

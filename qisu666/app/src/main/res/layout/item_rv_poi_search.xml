@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding">
+
+        <ImageView
+            android:id="@+id/img_address"
+            style="@style/Iv_Index_Item"
+            android:src="@mipmap/ic_share_charging_address" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/TextView_Subtitle_Black"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:text="广东省广州市天河区冼村街道黄埔大道西222号"
+            android:layout_toRightOf="@+id/img_address"/>
+
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_address"
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@+id/tv_address"
+            android:text="天河区"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_normal"
+            android:singleLine="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_height"
+        android:background="@color/divide_gray"/>
+
+</LinearLayout>

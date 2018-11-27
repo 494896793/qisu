@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary"
+    android:orientation="vertical">
+
+    v
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/default_padding_lnr"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/ic_tips"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:layout_marginLeft="5dp"
+            android:text="为了您的账户安全，建议使用自己的手机号码验证"/>
+
+    </LinearLayout>
+
+    <www.qisu666.com.widget.ClearEditText
+        android:id="@+id/et_phone"
+        style="@style/et_common"
+        android:hint="请输入您的手机号码"
+        android:maxLength="11"
+        android:inputType="number"/>
+
+    <View
+        style="@style/Divide_Horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white">
+        <www.qisu666.com.widget.ClearEditText
+            android:layout_weight="1"
+            android:id="@+id/et_code"
+            style="@style/et_common"
+            android:hint="输入验证码"
+            android:maxLength="6"
+            android:inputType="number"/>
+        <TextView
+            android:id="@+id/btn_getcode"
+            android:layout_marginRight="@dimen/default_padding_lnr"
+            android:padding="8dp"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_getcode_primary"
+            android:text="获取验证码"
+            android:textColor="@color/primary"/>
+    </LinearLayout>
+
+    <View
+        style="@style/Divide_Horizontal"
+        />
+
+    <www.qisu666.com.widget.ClearEditText
+        android:id="@+id/et_payment_pwd"
+        style="@style/et_common"
+        android:hint="设置六位数字支付密码"
+        android:maxLength="6"
+        android:inputType="numberPassword"
+        />
+
+    <www.qisu666.com.widget.ClearEditText
+        android:id="@+id/et_payment_reinput_pwd"
+        style="@style/et_common"
+        android:hint="确认六位数字支付密码"
+        android:maxLength="6"
+        android:inputType="numberPassword"
+        />
+    
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_padding_lnr"
+        android:layout_marginRight="@dimen/default_padding_lnr"
+        android:background="@drawable/selector_primary_btn_a"
+        android:text="保存"
+        android:textSize="@dimen/text_title"
+        android:textColor="@color/text_white"/>
+
+</LinearLayout>

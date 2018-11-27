@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="www.qisu666.com.activity.PayActivity"
+    android:orientation="vertical"
+    android:background="@color/bg_primary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/default_padding"
+                android:background="@color/bg_white">
+
+                <TextView
+                    style="@style/TextView_Subtitle_Black"
+                    android:text="@string/pay_select_amount"/>
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/default_margin_lnr"
+                    android:layout_marginBottom="@dimen/default_margin_lnr">
+
+                    <RadioButton
+                        android:id="@+id/radio_amount_1"
+                        style="@style/RadioButton_Pay"
+                        android:text="@string/pay_select_amount_1"/>
+                    <RadioButton
+                        android:id="@+id/radio_amount_2"
+                        style="@style/RadioButton_Pay"
+                        android:text="@string/pay_select_amount_2"
+                        android:layout_marginLeft="@dimen/default_margin_lnr"/>
+                    <RadioButton
+                        android:id="@+id/radio_amount_3"
+                        style="@style/RadioButton_Pay"
+                        android:text="@string/pay_select_amount_3"
+                        android:layout_marginLeft="@dimen/default_margin_lnr"/>
+
+                </RadioGroup>
+
+                <View
+                    style="@style/Divide_Horizontal_Full"/>
+
+                <TextView
+                    style="@style/TextView_Subtitle_Black"
+                    android:text="@string/pay_custom_amount"
+                    android:layout_marginTop="@dimen/default_margin_lnr"
+                    android:layout_marginBottom="@dimen/default_margin_lnr"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/et_amount"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_subtitle"
+                        android:textColor="@color/text_black"
+                        android:background="@drawable/bg_et_pay"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="5"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:inputType="number"/>
+
+                    <TextView
+                        style="@style/TextView_Subtitle_Black"
+                        android:text="元 (小于100000元)"
+                        android:layout_marginLeft="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextView_Subtitle_Black"
+                android:text="@string/pay_mode"
+                android:padding="@dimen/default_padding"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/bg_white">
+
+                <LinearLayout
+                    android:id="@+id/layout_wxpay"
+                    style="@style/LL_Item">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_pay_wnh"
+                        android:layout_height="@dimen/icon_pay_wnh"
+                        android:src="@mipmap/ic_wxpay"/>
+
+                    <TextView
+                        style="@style/TextView_Subtitle_Black_Weight_MarginLeft"
+                        android:text="@string/pay_wxpay" />
+
+                    <ImageView
+                        android:id="@+id/img_wxpay_checked"
+                        android:layout_width="@dimen/icon_small_wnh"
+                        android:layout_height="@dimen/icon_small_wnh"
+                        android:src="@mipmap/ic_pay_mode_checked"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/Divide_Horizontal_Full"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_alipay"
+                    style="@style/LL_Item">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_pay_wnh"
+                        android:layout_height="@dimen/icon_pay_wnh"
+                        android:src="@mipmap/ic_alipay"/>
+
+                    <TextView
+                        style="@style/TextView_Subtitle_Black_Weight_MarginLeft"
+                        android:text="@string/pay_alipay" />
+
+                    <ImageView
+                        android:id="@+id/img_alipay_checked"
+                        android:layout_width="@dimen/icon_small_wnh"
+                        android:layout_height="@dimen/icon_small_wnh"
+                        android:src="@mipmap/ic_pay_mode_unchecked" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/default_padding">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@mipmap/ic_device_tip"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pay_prompt"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_normal"
+                    android:layout_marginLeft="5dp"
+                    android:lineSpacingExtra="5dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_padding"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_subtitle"
+                android:text="@string/app_confirm"
+                android:background="@drawable/selector_primary_btn_a"
+                android:gravity="center"
+                android:layout_below="@+id/layout_latlng"
+                android:layout_marginLeft="@dimen/default_margin_lnr"
+                android:layout_marginRight="@dimen/default_margin_lnr"
+                android:layout_marginBottom="@dimen/default_margin_tnb"
+                android:clickable="true"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

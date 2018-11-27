@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_primary"
+    tools:context="www.qisu666.com.activity.CarShareDepositActivity">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <View
+        style="@style/Divide_Horizontal_Full_Big"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/bg_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/title_tnb_padding"
+        android:paddingLeft="@dimen/default_padding_lnr"
+        android:paddingRight="@dimen/default_padding_lnr">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/cs_car_little"
+            android:scaleType="centerInside"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/default_padding"
+            >
+
+            <TextView
+                android:id="@+id/tv_map_title"
+                style="@style/TextView_Content_Title_Black"
+                android:text="新能源车"
+                />
+            <TextView
+                style="@style/TextView_Normal_Dark_Gray"
+                android:text="新能源车"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/bg_white"
+        android:paddingBottom="@dimen/title_tnb_padding"
+        android:paddingTop="@dimen/title_tnb_padding"
+        android:paddingLeft="@dimen/default_padding_lnr"
+        android:paddingRight="@dimen/default_padding_lnr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TextView_Normal_Dark_Gray_MarginLeft"
+            android:text="新能源车"/>
+
+        <TextView
+            style="@style/TextView_Normal_Dark_Gray_MarginLeft"
+            android:text="新能源车"/>
+
+        <TextView
+            style="@style/TextView_Normal_Dark_Gray_MarginLeft"
+            android:text="新能源车"/>
+
+        <TextView
+            style="@style/TextView_Normal_Dark_Gray_MarginLeft"
+            android:text="新能源车"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:paddingTop="@dimen/default_margin_tnb"
+        android:paddingBottom="@dimen/default_margin_tnb"
+        android:background="@color/bg_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TextView_Content_Title_Black"
+            android:textColor="@color/primary"
+            android:text="@string/car_share_route_detail" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/bg_white"
+        android:paddingTop="@dimen/default_margin_tnb"
+        android:paddingBottom="@dimen/default_margin_tnb"
+        android:paddingLeft="@dimen/default_margin_lnr"
+        android:paddingRight="@dimen/default_margin_lnr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/default_padding_lnr"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/TextView_Normal_Dark_Gray"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="@string/car_share_return_mile_fee"
+                />
+            <TextView
+                style="@style/TextView_Normal_Dark_Gray"
+                android:text="广东省广州市"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/default_margin_tnb"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/TextView_Normal_Dark_Gray"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="@string/car_share_return_time_fee"
+                />
+            <TextView
+                style="@style/TextView_Normal_Dark_Gray"
+                android:text="广东省广州市"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/TextView_Normal_Dark_Gray"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="@string/car_share_return_total_fee"
+                />
+            <TextView
+                style="@style/TextView_Normal_Dark_Gray"
+                android:text="广东省广州市"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/default_margin_tnb"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/TextView_Normal_Dark_Gray"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="@string/car_share_return_real_fee"
+                />
+            <TextView
+                style="@style/TextView_Normal_Dark_Gray"
+                android:text="广东省广州市"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_title">
+
+    <View
+        android:id="@+id/bg_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:id="@+id/tv_home_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="深圳"
+        android:textSize="17sp"
+        android:textColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:drawableLeft="@mipmap/ditu"
+        android:drawablePadding="7dp"/>
+    
+    <cn.bingoogolapple.badgeview.BGABadgeImageView
+        android:id="@+id/img_home_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/gengd"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        app:badge_horizontalMargin="0dp"
+        app:badge_verticalMargin="0dp" />
+
+</RelativeLayout>

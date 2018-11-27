@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_linear_btn">
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/bottom_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:textColor="@color/text_white"
+                android:text="@string/app_delete"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="@android:color/holo_red_light"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/default_padding"
+                android:paddingRight="@dimen/default_padding"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/bg_white">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/TextView_Subtitle_Black_Weight"
+                android:text="被代付人"
+                android:layout_margin="@dimen/default_margin_lnr" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                style="@style/TextView_Subtitle_Gray"
+                android:text="13512345678"
+                android:layout_margin="@dimen/default_margin_lnr" />
+
+        </LinearLayout>
+
+    </com.daimajia.swipe.SwipeLayout>
+
+    <View
+        android:id="@+id/divide"
+        style="@style/Divide_Horizontal"/>
+
+</LinearLayout>

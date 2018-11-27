@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/icon_th_wnh"
+        android:layout_height="@dimen/icon_th_wnh"
+        android:src="@mipmap/shouye2"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_title"
+        android:textSize="@dimen/text_th"
+        android:textColor="@color/selector_text_color_th"
+        android:layout_gravity="bottom|center_horizontal"
+        android:paddingBottom="3dp"/>
+
+</LinearLayout>

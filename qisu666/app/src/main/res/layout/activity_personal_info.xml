@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical"
+    tools:context="www.qisu666.com.activity.PersonalInfoActivity">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <LinearLayout
+        android:background="@drawable/linear_shape"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:id="@+id/layout_portrait"
+        style="@style/LL_Item"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            style="@style/TextView_Subtitle_Black_Weight"
+            android:text="@string/personal_portrait" />
+
+        <com.de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_portrait"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/ic_personal_info_portrait" />
+
+        <ImageView style="@style/Right_Arrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/linear_shape"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_tnb"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_alias"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_15dp"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/TextView_Subtitle_Black_Weight"
+                android:text="@string/personal_alias" />
+
+            <TextView
+                android:id="@+id/tv_alias"
+                style="@style/TextView_Subtitle_Gray" />
+
+            <ImageView style="@style/Right_Arrow" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_gender"
+            style="@style/LL_Item">
+
+            <TextView
+                style="@style/TextView_Subtitle_Black_Weight"
+                android:text="@string/personal_gender" />
+
+            <TextView
+                android:id="@+id/tv_gender"
+                style="@style/TextView_Subtitle_Gray"
+                android:text="@string/personal_gender_default" />
+
+            <ImageView style="@style/Right_Arrow" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_phone"
+            style="@style/LL_Item">
+
+            <TextView
+                style="@style/TextView_Subtitle_Black_Weight"
+                android:text="@string/personal_phone" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                style="@style/TextView_Subtitle_Gray" />
+
+            <ImageView
+                style="@style/Right_Arrow"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/layout_car_info"-->
+        <!--style="@style/LL_Item">-->
+
+        <!--<TextView-->
+        <!--style="@style/TextView_Subtitle_Black_Weight"-->
+        <!--android:text="@string/add_car_info_title" />-->
+
+        <!--<ImageView style="@style/Right_Arrow" />-->
+
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/linear_shape"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:id="@+id/layout_modify_pwd"
+        style="@style/LL_Item"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            style="@style/TextView_Subtitle_Black_Weight"
+            android:text="@string/personal_modify_pwd" />
+
+        <ImageView style="@style/Right_Arrow" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/gr_7" />
+
+</LinearLayout>

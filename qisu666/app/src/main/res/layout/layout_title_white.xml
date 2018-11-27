@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:id="@+id/layout_title"
+    android:background="@color/bg_white">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_title"
+        android:layout_centerInParent="true"
+        android:text="@string/user_title"/>
+
+    <ImageView
+        android:id="@+id/img_title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_left_arrow_black"
+        android:paddingLeft="@dimen/title_lnr_padding"
+        android:paddingRight="@dimen/title_lnr_padding"
+        android:paddingTop="@dimen/title_tnb_padding"
+        android:paddingBottom="@dimen/title_tnb_padding"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/btn_title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/img_title_left"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_title_btn"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/title_lnr_padding"
+        android:gravity="center"
+        android:background="@null"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/title_lnr_padding"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_title_btn"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:background="@null"
+        android:visibility="gone"
+        android:layout_toLeftOf="@+id/img_title_right"/>
+
+    <ImageView
+        android:id="@+id/img_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/title_lnr_padding"
+        android:paddingRight="@dimen/title_lnr_padding"
+        android:paddingTop="@dimen/title_tnb_padding"
+        android:paddingBottom="@dimen/title_tnb_padding"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+    <View
+        android:id="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_height"
+        android:background="@color/divide_gray"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

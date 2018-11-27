@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_primary"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_alias"
+            style="@style/LL_Item"
+            android:clickable="false">
+
+            <TextView
+                android:layout_weight="1"
+                style="@style/TextView_Subtitle_Black"
+                android:text="@string/annual_type"/>
+
+            <TextView
+                style="@style/TextView_Subtitle_Black"
+                android:text="@string/annual_validity"/>
+
+            <TextView
+                android:visibility="gone"
+                style="@style/TextView_Subtitle_Black"
+                android:textSize="@dimen/text_small"
+                android:text="(元)"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv_balance"
+                style="@style/TextView_Subtitle_Gray"
+                android:text="0.00"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/Divide_Horizontal"/>
+
+        <LinearLayout
+            android:id="@+id/layout_gender"
+            style="@style/LL_Item"
+            android:clickable="false">
+
+            <TextView
+                android:layout_weight="1"
+                style="@style/TextView_Subtitle_Black"
+                android:text="@string/annual_amount"/>
+
+            <TextView
+                android:id="@+id/tv_annual_pay"
+                style="@style/TextView_Subtitle_Black"
+                android:textColor="@color/text_yellow"
+                />
+
+            <TextView
+                android:visibility="gone"
+                style="@style/TextView_Subtitle_Black"
+                android:textSize="@dimen/text_small"
+                android:text="元"/>
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/et_amount"
+                android:layout_marginLeft="10dp"
+                style="@style/TextView_Subtitle_Gray"
+                android:layout_weight="1"
+                android:hint="@string/recharge_amount_hint"
+                android:textColorHint="@color/text_gray"
+                android:background="@null"
+                android:maxLength="5"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/TextView_Subtitle_Black"
+        android:text="@string/pay_mode"
+        android:padding="@dimen/default_padding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/bg_white">
+
+        <LinearLayout
+            android:id="@+id/layout_alipay"
+            style="@style/LL_Item">
+
+            <ImageView
+                android:layout_width="@dimen/icon_pay_wnh"
+                android:layout_height="@dimen/icon_pay_wnh"
+                android:src="@mipmap/ic_alipay"/>
+
+            <TextView
+                style="@style/TextView_Subtitle_Black_Weight_MarginLeft"
+                android:text="@string/pay_alipay" />
+
+            <ImageView
+                android:id="@+id/img_alipay_checked"
+                android:layout_width="@dimen/icon_small_wnh"
+                android:layout_height="@dimen/icon_small_wnh"
+                android:src="@mipmap/ic_pay_mode_checked" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/Divide_Horizontal_Full"/>
+
+        <LinearLayout
+            android:id="@+id/layout_wxpay"
+            style="@style/LL_Item">
+
+            <ImageView
+                android:layout_width="@dimen/icon_pay_wnh"
+                android:layout_height="@dimen/icon_pay_wnh"
+                android:src="@mipmap/ic_wxpay"/>
+
+            <TextView
+                style="@style/TextView_Subtitle_Black_Weight_MarginLeft"
+                android:text="@string/pay_wxpay" />
+
+            <ImageView
+                android:id="@+id/img_wxpay_checked"
+                android:layout_width="@dimen/icon_small_wnh"
+                android:layout_height="@dimen/icon_small_wnh"
+                android:src="@mipmap/ic_pay_mode_unchecked"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/icon_tag_wnh"
+            android:layout_height="@dimen/icon_tag_wnh"
+            android:src="@mipmap/ic_device_tip"/>
+
+        <TextView
+            android:text="@string/annual_tip"
+            android:layout_marginLeft="@dimen/default_margin_tnb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_subtitle"
+        android:text="@string/recharge_submit"
+        android:background="@drawable/selector_primary_btn_a"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/default_margin_lnr"
+        android:layout_marginRight="@dimen/default_margin_lnr"
+        android:layout_marginBottom="@dimen/default_margin_tnb"
+        android:clickable="true"/>
+
+</LinearLayout>

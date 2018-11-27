@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:background="@color/main_background"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title_primary"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="14dp"
+                android:layout_width="match_parent"
+                android:background="@mipmap/rg_7"
+                android:gravity="center_horizontal"
+                android:layout_height="169dp">
+                <TextView
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="21dp"
+                    android:id="@+id/car_brand"
+                    android:text="比亚迪-E5"
+                    android:textColor="@color/new_text_gray"
+                    android:textSize="@dimen/sp_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@id/car_brand"
+                    android:background="@drawable/gray_line_shape"
+                    android:text="自动挡"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:paddingBottom="20dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:paddingRight="15dp"
+                android:paddingTop="13dp"
+                android:paddingLeft="15dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="@drawable/tx_radio"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/text_white"
+                    android:layout_width="wrap_content"
+                    android:text="车辆信息"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/new_text_gray"
+                        android:text="动力源"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tx_dl"
+                        android:text="纯电动"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_white"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/new_text_gray"
+                        android:text="颜色"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tx_color"
+                        android:text="纯电动"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_white"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/new_text_gray"
+                        android:text="所属城市"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tx_city"
+                        android:text="纯电动"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_white"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/new_text_gray"
+                        android:text="车牌号"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tx_carnum"
+                        android:text="纯电动"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_white"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/new_text_gray"
+                        android:text="行驶证"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tx_driver"
+                        android:text="纯电动"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_white"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/new_text_gray"
+                        android:text="车驾号信息"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tx_info"
+                        android:text="纯电动"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_white"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:paddingBottom="20dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:paddingRight="15dp"
+                android:paddingTop="13dp"
+                android:paddingLeft="15dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="@drawable/tx_radio"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/text_white"
+                    android:layout_width="wrap_content"
+                    android:text="投资信息"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/new_text_gray"
+                        android:text="状态"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tx_statu"
+                        android:text="投资中"
+                        android:textSize="15sp"
+                        android:textColor="@color/new_primary"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/new_text_gray"
+                        android:text="投资类型"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tx_inverst_type"
+                        android:text="投资型"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_white"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/new_text_gray"
+                        android:text="认购时间"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tx_inverst_time"
+                        android:text="2018-06-15"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_white"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/new_text_gray"
+                        android:text="到期时间"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tx_inverst_endtime"
+                        android:text="2018-06-15"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_white"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/first_re"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/new_text_gray"
+                        android:text="分红时间"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tx_inverst_receive_time"
+                        android:text="2018-06-15"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_white"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/first_re2"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/new_text_gray"
+                        android:text="累计收益"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tx_inverst_money_time"
+                        android:text="0"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_white"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/new_text_gray"
+                        android:text="合同状态"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/text_white"
+                        android:id="@+id/tx_contract_statu"
+                        android:text="15W"
+                        android:textSize="18sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/relieve_time"
+                        android:layout_alignBottom="@id/tx_contract_statu"
+                        android:layout_toLeftOf="@id/tx_contract_statu"
+                        android:textColor="@color/text_gray"
+                        android:textSize="13sp"
+                        android:text="解除"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_contract"
+                android:layout_marginBottom="@dimen/dp_40"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:paddingBottom="13dp"
+                android:paddingRight="15dp"
+                android:paddingTop="13dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/tx_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tx_contract_title"
+                    android:text="投资型合同"
+                    android:textColor="@color/text_gray"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="查看详情"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_white"
+                    android:layout_toLeftOf="@+id/enter_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:id="@+id/enter_img"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/jiant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

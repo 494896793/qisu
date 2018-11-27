@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <www.qisu666.com.widget.ClearEditText
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:id="@+id/et_alias"
+        style="@style/et_common"
+        android:layout_marginTop="20dp"
+        android:background="@color/main_background"
+        android:hint="请输入昵称"
+        android:maxLength="11"
+        android:padding="10dp"
+        android:textColor="@color/text_white"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:background="@color/bianxian"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/dimen_30dp"
+        android:layout_marginRight="@dimen/dimen_30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selector_primary_btn_a"
+        android:text="@string/app_save"
+        android:textColor="@color/main_background"
+        android:textSize="@dimen/text_title" />
+
+</LinearLayout>

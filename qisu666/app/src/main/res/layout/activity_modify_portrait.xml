@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical"
+    tools:context="www.qisu666.com.activity.PersonalInfoActivity">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <GridView
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/linear_shape"
+        android:columnWidth="80dp"
+        android:gravity="center_horizontal"
+        android:horizontalSpacing="2dp"
+        android:listSelector="#0000"
+        android:numColumns="auto_fit"
+        android:paddingBottom="@dimen/default_padding"
+        android:paddingTop="@dimen/default_padding" />
+
+    <TextView
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/layout_latlng"
+        android:layout_marginLeft="@dimen/default_margin_lnr"
+        android:layout_marginRight="@dimen/default_margin_lnr"
+        android:background="@drawable/selector_primary_btn_a"
+        android:clickable="true"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/app_submit"
+        android:textColor="@color/main_background"
+        android:textSize="18sp" />
+
+</LinearLayout>

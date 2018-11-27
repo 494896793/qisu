@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/bg_white">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@mipmap/partner_banner" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+               <TextView
+                   android:id="@+id/invest_touzi"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="投资型合伙人"
+                   android:paddingLeft="15dp"
+                   android:textSize="16dp"
+                   android:textColor="@color/text_black"
+                   />
+               <ImageView
+                   android:id="@+id/invest_img_touzi"
+                   android:layout_width="15dp"
+                   android:layout_height="15dp"
+                   android:src="@mipmap/img_02"
+                   />
+
+           </LinearLayout>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="投资10000元,总收益22000元。享受平台投资型会员特权租车7折优惠"
+               android:paddingLeft="25dp"
+               android:paddingRight="40dp"
+               android:paddingTop="15dp"
+               />
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="50dp"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+               <TextView
+                   android:id="@+id/invest_xiaofei"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="消费型合伙人"
+                   android:paddingLeft="15dp"
+                   android:textSize="16dp"
+                   android:textColor="@color/text_black"
+                   />
+               <ImageView
+                   android:id="@+id/invest_img_xiaofei"
+                   android:layout_width="15dp"
+                   android:layout_height="15dp"
+                   android:src="@mipmap/img_02"
+                   />
+
+           </LinearLayout>
+
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="投资10000元,总收益30000元。享受平台消费型会员特权租车7折优惠"
+               android:paddingLeft="25dp"
+               android:paddingRight="40dp"
+               android:paddingTop="15dp"
+               />
+
+
+       </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/invest_shuoming_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+        <CheckBox
+            android:id="@+id/cb_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我已阅读并同意《"
+            />
+        <TextView
+            android:id="@+id/invest_tiaokuan_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_blue_ali"
+            android:text="奇速共享合伙人投资计划说明"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="》"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:textColor="@android:color/white"
+        android:id="@+id/btn_login"
+        style="@style/style_btn"
+        android:background="@color/not_login"
+        android:clickable="false"
+        android:text="前往认购" />
+
+
+    <TextView
+        android:id="@+id/invest_btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_subtitle"
+        android:text="前往认购"
+        android:background="@drawable/selector_primary_btn_a"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/default_margin_lnr"
+        android:layout_marginRight="@dimen/default_margin_lnr"
+        android:layout_marginBottom="@dimen/default_margin_tnb"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical"
+    tools:context="www.qisu666.com.fragment.AccountPayFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_alipay"
+        style="@style/LL_Item"
+        android:layout_marginTop="@dimen/default_margin_tnb"
+        android:clickable="false">
+
+        <TextView
+            style="@style/TextView_Subtitle_Black"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="账户余额："
+            android:textColor="@color/text_gray" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            style="@style/TextView_Subtitle_Black_Weight"
+            android:textColor="@color/text_white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/img_checked"
+            android:layout_width="@dimen/icon_small_wnh"
+            android:layout_height="@dimen/icon_small_wnh"
+            android:src="@mipmap/ic_pay_mode_checked" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_padding">
+
+        <ImageView
+            android:layout_width="@dimen/icon_right_arrow_wnh"
+            android:layout_height="@dimen/icon_right_arrow_wnh"
+            android:src="@mipmap/ic_device_tip" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/pay_prompt"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_normal" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_latlng"
+        android:layout_marginBottom="@dimen/default_margin_tnb"
+        android:layout_marginLeft="@dimen/default_margin_lnr"
+        android:layout_marginRight="@dimen/default_margin_lnr"
+        android:background="@drawable/selector_primary_btn_a"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/default_padding"
+        android:text="@string/app_confirm"
+        android:textColor="@color/main_background"
+        android:textSize="18sp" />
+
+</LinearLayout>

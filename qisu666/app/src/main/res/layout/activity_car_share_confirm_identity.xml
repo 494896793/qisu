@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/content_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:src="@mipmap/yc_35" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@mipmap/yc_36" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="5dp"
+                    android:src="@mipmap/yc_38" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@color/content_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:text="1、身份证人像脸"
+                            android:textColor="@color/text_gray"
+                            android:textSize="14sp" />
+
+                        <FrameLayout
+                            android:id="@+id/fl_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="102dp">
+
+                            <ImageView
+                                android:id="@+id/img_front_img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/yc_40" />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginRight="12dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:text="2、身份证国徽面"
+                            android:textColor="@color/text_gray"
+                            android:textSize="14sp" />
+
+                        <FrameLayout
+                            android:id="@+id/fl_front"
+                            android:layout_width="wrap_content"
+                            android:layout_height="102dp"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/img_back_img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/yc_41" />
+
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    style="@style/TextView_Subtitle_Black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="7dp"
+                    android:text="姓名"
+                    android:textColor="@color/text_white"
+                    android:textSize="18sp" />
+
+                <www.qisu666.com.widget.ClearEditText
+                    android:id="@+id/et_identity_name"
+                    style="@style/et_common"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/content_bg"
+                    android:hint="识别成功后自动填写"
+                    android:maxLength="8"
+                    android:padding="7dp"
+                    android:textColor="@color/text_white"
+                    android:textColorHint="@color/text_gray"
+                    android:textSize="18sp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/bianxian" />
+
+
+                <TextView
+                    style="@style/TextView_Subtitle_Black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="7dp"
+                    android:paddingLeft="@dimen/default_padding"
+                    android:text="身份证号"
+                    android:textColor="@color/text_white"
+                    android:textSize="18sp" />
+
+                <www.qisu666.com.widget.ClearEditText
+                    android:id="@+id/et_identity_num"
+                    style="@style/et_common"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/content_bg"
+                    android:hint="@string/car_share_confirm_identity_hint_id"
+                    android:maxLength="18"
+                    android:padding="7dp"
+                    android:textColor="@color/text_white"
+                    android:textColorHint="@color/text_gray"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/bianxian" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextView_Subtitle_Black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="若识别信息有误，请重新拍照或上传清晰照片识别"
+                android:textColor="@color/text_gray"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/default_margin_lnr"
+                android:layout_marginRight="@dimen/default_margin_lnr"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/selector_primary_btn_a"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="立即上传"
+                android:textColor="@color/main_background"
+                android:textSize="18sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tx_artificial"
+                style="@style/TextView_Subtitle_Black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text=""
+                android:textSize="13sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

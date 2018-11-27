@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/online_user_list_item_textview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/default_padding"
+    android:paddingRight="@dimen/default_padding"
+    android:paddingTop="@dimen/default_padding_tnb"
+    android:paddingBottom="@dimen/default_padding_tnb"
+    android:textSize="@dimen/text_subtitle"
+    android:textColor="@color/text_black"
+    android:singleLine="true">
+
+</TextView>

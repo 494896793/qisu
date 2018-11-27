@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_primary" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/yc_29" />
+
+        <TextView
+            android:id="@+id/where_wangdian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="金谷创业园"
+            android:textColor="@color/text_white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/where_julizuijin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/where_wangdian"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="当前距离最近还车网点"
+            android:textColor="@color/text_gray"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/where_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:textColor="@color/text_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="约 " />
+
+        <TextView
+            android:id="@+id/where_gongli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.1"
+            android:textColor="@color/text_white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:textColor="@color/text_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公里，还需要支付挪车费 " />
+
+        <TextView
+            android:textColor="@color/text_white"
+            android:id="@+id/where_yuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9.0"
+            android:textSize="18dp" />
+
+        <TextView
+            android:textColor="@color/text_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元 " />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/where_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/content_bg"
+        android:padding="15dp"
+        android:text="本次还车不额外收取挪车费用"
+        android:textColor="@color/text_white"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/content_bg"
+        android:drawableLeft="@mipmap/yc_32"
+        android:drawablePadding="5dp"
+        android:padding="15dp"
+        android:text="温馨提示：到达网点再还车不收取挪车费用！ "
+        android:textColor="@color/orange"
+        android:textSize="13sp" />
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1">-->
+
+    <!--<View-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:src="@mipmap/car_pocket_img" />-->
+
+    <!--</LinearLayout>-->
+
+
+    <TextView
+        android:id="@+id/where_sure"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/default_margin_lnr"
+        android:layout_marginRight="@dimen/default_margin_lnr"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selector_primary_btn_a"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="确认还车"
+        android:textColor="@color/main_background"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

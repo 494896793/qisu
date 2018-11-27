@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_primary">
+
+    <include layout="@layout/layout_title_primary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/default_margin_lnr">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@mipmap/img_share_charging_private"
+            android:scaleType="centerCrop"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/bg_white"
+            android:padding="@dimen/default_padding"
+            android:gravity="center_vertical">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/share_charging_type_private_prompt"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/text_black"/>
+
+            <TextView
+                android:id="@+id/btn_private"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_subtitle"
+                android:text="@string/share_charging_type_private"
+                android:background="@drawable/selector_primary_btn_a"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/default_margin_tnb"
+                android:clickable="true"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/default_margin_lnr"
+        android:layout_marginRight="@dimen/default_margin_lnr"
+        android:layout_marginBottom="@dimen/default_margin_lnr">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@mipmap/img_share_charging_public"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/bg_white"
+            android:padding="@dimen/default_padding"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/share_charging_type_public_prompt"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/text_black"/>
+
+            <TextView
+                android:id="@+id/btn_public"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_subtitle"
+                android:text="@string/share_charging_type_public"
+                android:background="@drawable/selector_primary_btn_a"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/default_margin_tnb"
+                android:clickable="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

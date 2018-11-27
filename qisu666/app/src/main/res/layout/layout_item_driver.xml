@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_item_driver"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/default_padding_lnr"
+        android:paddingRight="@dimen/default_padding_lnr">
+        
+        <TextView
+            style="@style/TextView_Normal_Black"
+            android:text="使用时长: " />
+
+        <cn.iwgang.countdownview.CountdownView
+            android:id="@+id/cv_driver_time_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:isHideTimeBackground="true"
+            app:isShowDay="false"
+            app:isShowHour="true"
+            app:isShowMillisecond="false"
+            app:isShowMinute="true"
+            app:isShowSecond="true"
+            app:isTimeTextBold="true"
+            app:suffixDay=":"
+            app:suffixGravity="bottom"
+            app:suffixHour=":"
+            app:suffixMinute=":"
+            app:suffixSecond=""
+            app:suffixTextColor="@color/text_red"
+            app:suffixTextSize="12sp"
+            app:timeTextColor="@color/text_red"
+            app:timeTextSize="14sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/TextView_Normal_Black"
+            android:text="代驾费用:" />
+
+        <TextView
+            android:id="@+id/tv_driver_money"
+            style="@style/TextView_Normal_Dark_Gray_MarginLeft"
+            android:text="0元"
+            android:textColor="@color/text_red" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/default_padding_lnr"
+        android:paddingRight="@dimen/default_padding_lnr">
+
+        <TextView
+            style="@style/TextView_Normal_Black"
+            android:text="租车费用(时长费+里程费):" />
+
+        <TextView
+            android:id="@+id/tv_driver_time_money"
+            style="@style/TextView_Normal_Dark_Gray_MarginLeft"
+            android:text="0元"
+            android:textColor="@color/text_red" />
+
+    </LinearLayout>
+
+    <View style="@style/Divide_Horizontal_Full" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/default_padding_lnr"
+            android:paddingRight="@dimen/default_padding_lnr">
+
+            <com.de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_car_driver"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@mipmap/ic_personal_info_portrait" />
+
+            <TextView
+                android:id="@+id/tv_car_driver_name"
+                style="@style/TextView_Normal_Black"
+                android:layout_marginLeft="@dimen/default_margin_tnb"
+                tools:text="@string/personal_portrait" />
+
+            <TextView
+                android:id="@+id/tv_car_driver_years"
+                style="@style/TextView_Normal_Black"
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/default_margin_tnb"
+                android:layout_weight="1"
+                tools:text="@string/personal_portrait" />
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@mipmap/ic_collection_yellow" />
+
+            <TextView
+                android:id="@+id/tv_car_driver_star_num"
+                style="@style/TextView_Normal_Black"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                tools:text="@string/personal_portrait" />
+
+            <ImageView
+                android:id="@+id/img_car_driver_message"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/cs_msm" />
+
+            <ImageView
+                android:id="@+id/img_car_driver_call"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/cs_call" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_driver_tip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_white"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/TextView_Normal_Black"
+                android:text="请等待系统为您分配司机"
+                android:textColor="@color/text_red" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

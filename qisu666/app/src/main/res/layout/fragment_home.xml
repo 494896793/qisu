@@ -1,0 +1,424 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    tools:context="www.qisu666.com.fragment.HomeFragment">
+
+    <include layout="@layout/layout_title_home" />
+
+    <!--&lt;!&ndash; 头部图片 &ndash;&gt;-->
+    <!--<ImageView-->
+    <!--android:id="@+id/top_img"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:scaleType="fitXY"-->
+    <!--android:src="@mipmap/sy_8" />-->
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:layout_marginTop="12dp" />
+
+    <RelativeLayout
+        android:id="@+id/ll_index_message"
+        android:layout_width="302dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/home_radius_layout"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/gonggao" />
+
+        <View
+            android:id="@+id/line_three"
+            android:layout_width="1dp"
+            android:layout_height="23dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="35dp"
+            android:background="@android:color/white" />
+
+        <www.qisu666.com.widget.JDAdverView
+            android:id="@+id/jdadver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </www.qisu666.com.widget.JDAdverView>
+
+        <!--<TextView-->
+            <!--android:id="@+id/ll_index_message_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_marginLeft="50dp"-->
+            <!--android:ellipsize="marquee"-->
+            <!--android:maxWidth="190dp"-->
+            <!--android:singleLine="true"-->
+            <!--android:text="奇速微信充值限额问题公告"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="14sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/ll_index_message_time"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="18dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="20.5dp"-->
+            <!--android:ellipsize="marquee"-->
+            <!--android:singleLine="true"-->
+            <!--android:text="4-28"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="13sp" />-->
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <!-- 共享充电 Start -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="奇速服务"
+                    android:textColor="@color/text_white"
+                    android:textSize="18sp" />
+
+
+                <!-- 客服 -->
+                <TextView
+                    android:id="@+id/tv_kefu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:drawableLeft="@mipmap/sy_9"
+                    android:drawablePadding="6dp"
+                    android:gravity="center|right"
+                    android:text="我的客服"
+                    android:textColor="@color/text_gray"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!-- 桩点地图 -->
+                        <ImageView
+                            android:id="@+id/iv_zhuangdian"
+                            android:layout_width="match_parent"
+                            android:layout_height="137dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/sy_1" />
+
+
+                        <TextView
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:layout_marginBottom="10dp"
+                            android:text="我要充电"
+                            android:textColor="@color/text_white" />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_fujin"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/linear_shape"
+                            android:drawableLeft="@mipmap/sy_4"
+                            android:gravity="center"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="8dp"
+                            android:text="附近电站"
+                            android:textColor="@color/new_gray"
+                            android:textSize="11.5sp" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.1" />
+
+                        <TextView
+                            android:id="@+id/tv_zhinan"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/linear_shape"
+                            android:drawableLeft="@mipmap/sy_5"
+                            android:gravity="center"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="8dp"
+                            android:text="充电指南"
+                            android:textColor="@color/new_gray"
+                            android:textSize="11.5sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <!-- 用车 -->
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_share_car"
+                            android:layout_width="match_parent"
+                            android:layout_height="137dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/sy_2" />
+
+                        <TextView
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:layout_marginBottom="10dp"
+                            android:text="我要用车"
+                            android:textColor="@color/text_white" />
+
+                    </FrameLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_Car_fu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/linear_shape"
+                            android:drawableLeft="@mipmap/sy_6"
+                            android:drawablePadding="2dp"
+                            android:gravity="center"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="8dp"
+                            android:text="附近车辆"
+                            android:textColor="@color/new_gray"
+                            android:textSize="11.5sp" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.1" />
+
+                        <TextView
+                            android:id="@+id/tv_zhinan_yong"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/linear_shape"
+                            android:drawableLeft="@mipmap/sy_7"
+                            android:drawablePadding="2dp"
+                            android:gravity="center"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="8dp"
+                            android:text="用车指南"
+                            android:textColor="@color/new_gray"
+                            android:textSize="11.5sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <!-- 奇速合伙人 Start -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="奇速合伙人"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="91dp"
+                        android:layout_weight="1">
+
+                        <!-- 成为合伙人 -->
+                        <ImageView
+                            android:id="@+id/iv_chengwei"
+                            android:layout_width="165dp"
+                            android:layout_height="91dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/sy_10" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="15dp"
+                            android:text="成为合伙人"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" />
+
+                        <View
+                            android:visibility="gone"
+                            android:layout_width="27dp"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="41dp"
+                            android:background="@android:color/white"
+                            android:gravity="center_vertical" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="51dp"
+                            android:text="加入奇速，自己做老板！"
+                            android:textColor="@android:color/white"
+                            android:textSize="13sp" />
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="91dp"
+                        android:layout_weight="1">
+
+                        <!-- 合伙人说明 -->
+                        <ImageView
+                            android:id="@+id/iv_shuoming"
+                            android:layout_width="165dp"
+                            android:layout_height="91dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/sy_12" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="15dp"
+                            android:text="合伙人说明"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp" />
+
+                        <View
+                            android:visibility="gone"
+                            android:layout_width="27dp"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="41dp"
+                            android:background="@android:color/white"
+                            android:gravity="center_vertical" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="51dp"
+                            android:text="加入奇速秘诀，速速来看！"
+                            android:textColor="@android:color/white"
+                            android:textSize="13sp" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

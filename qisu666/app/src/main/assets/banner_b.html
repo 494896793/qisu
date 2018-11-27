@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>充值大回馈</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0 auto;
+	}
+	html {
+		width: 100%;
+		height: 100%;
+		background-image: url(qqq.png);
+		background-size: 100% 150%;
+	}
+	.box{
+		width: 92%;
+		height: 70%;
+		margin: 8% 4%;
+	}
+	header {
+		width: 100%;
+		height: 40px;
+		line-height: 40px;
+		font-size: 18px;
+		text-align: center;
+		background: #00A0EA;
+		color: #fff;
+	}
+	.box p {
+		text-align: justify;
+		text-indent: 2em;
+		margin: 2% 0;
+		font-size: 14px;
+		line-height: 26px;
+	}
+	.box .a_one {
+		font-size: 16px;
+		text-indent: 0;
+	}
+
+	footer{
+		width: 70%;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 8%;
+		font-size: 12px;
+		margin-bottom: 10%;
+		color: #000;
+	}
+
+	.go {
+		width: 100%;
+		line-height: 50px;
+		bottom: 10%;
+		text-indent: center;
+	}
+	.go a {
+		text-decoration: none;
+	    display: inline-block;
+	    background: #00a0ea;
+	    width: 70%;
+	    height: 50px;
+	    color: #fff;
+	    border-radius: 25px;
+	    margin-top: 16%;
+	    margin-left: 15%;
+	    text-align: center;
+	    font-size: 18px;
+	}
+	.bg {
+		width: 76%;
+		height: 350px;
+		margin: 0 auto;
+		margin-top: 8%;
+	}
+	.bg img {
+		width: 100%;
+	
+	}
+</style>
+<body>
+	<div class="bg"><img src="cza.png" alt=""></div>
+	<div class="go" onclick="callAndroid()"><a href="#">前往充值</a></div>
+	<footer>注：活动期间，充值5000元和充值9999元两档的充值赠送奖励每个用户最多可各领取两次</footer>
+</body>
+<script>
+	var u = navigator.userAgent;
+	var isAndroid = u.indexOf('Android') > -1 || u.indexOf('android') > -1 || u.indexOf('Andr') > -1 || u.indexOf('andr') > -1; //android终端
+	var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+
+     function callAndroid(){
+                          if(isiOS){
+                          window.webkit.messageHandlers.hello.postMessage("chongzhi");
+                          }else{
+                          android.hello("chongzhi");
+                          }
+        }
+     
+   		
+
+</script>
+</html>

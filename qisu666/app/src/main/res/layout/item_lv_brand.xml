@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_linear_btn">
+    
+    <TextView
+        android:id="@+id/tv_letter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="B"
+        android:textSize="@dimen/text_subtitle"
+        android:textColor="@color/text_black"
+        android:paddingTop="5dp"
+        android:background="@color/bg_white"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/TextView_Subtitle_Black"
+        android:text="比亚迪"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/default_margin_tnb"
+        android:layout_marginBottom="@dimen/default_margin_tnb"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_height"
+        android:background="@color/bg_primary"/>
+
+</LinearLayout>

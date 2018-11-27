@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:background="@drawable/item_selector"
+    android:orientation="vertical"
+    android:id="@+id/item_term_layout"
+    >
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/text_gray"/>-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:orientation="horizontal"
+    >
+
+    <RelativeLayout
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_marginLeft="25dp"
+        >
+
+        <ImageView
+            android:id="@+id/item_term_img"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/cs_car" />
+        <TextView
+            android:id="@+id/item_term_carname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="粤HW8392"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:textSize="10dp"
+            android:textColor="@color/text_black"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="89dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/item_term_carModelname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="比汽能源车"
+            android:textColor="@color/text_black"
+            />
+
+        <TextView
+            android:id="@+id/item_term_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投资类型：消费型"
+            android:textSize="10dp"
+            android:paddingTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/item_term_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投资状态：开发认购"
+            android:textSize="10dp"
+            android:paddingTop="2dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投资进度:"
+                android:textSize="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+            <ProgressBar
+                android:id="@+id/item_term_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="55dp"
+                android:layout_height="8dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:progressDrawable="@drawable/item_term_progress_select"
+                android:progress="60" />
+
+            <TextView
+                android:id="@+id/item_term_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="60%"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/item_term_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="参考价格：15万"
+        android:paddingTop="15dp"
+        android:textSize="10dp"
+        />
+
+</LinearLayout>
+
+
+</LinearLayout>
